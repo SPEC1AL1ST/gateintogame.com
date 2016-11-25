@@ -21,6 +21,18 @@
     font-family: 'Papyrus'; /* Гарнитура шрифта */
     src: url(../fonts/1_Papyrus.ttf); /* Путь к файлу со шрифтом */
 }
+@font-face {
+    font-family: 'Buccaneer Cyr'; /* Гарнитура шрифта */
+    src: url(../fonts/buccaneer_cyr.ttf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: 'ILK Comic'; /* Гарнитура шрифта */
+    src: url(../fonts/ILK_Comic.otf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: 'Papyrus_Ru'; /* Гарнитура шрифта */
+    src: url(../fonts/papyrus_ru.ttf); /* Путь к файлу со шрифтом */
+}
 body {
     background: #faf9f0;
 }
@@ -45,7 +57,7 @@ ul {
 }
 .header-menu-item {
     display: inline-block;
-    font: 600 italic 30px 'Papyrus', sans-serif;
+    font: 600 italic 30px 'Papyrus_Ru', sans-serif;
     list-style: none;
     padding: 10px 15px 0 15px;
 }
@@ -54,20 +66,21 @@ ul {
     color: #0088CC;
     text-decoration: none;
 }
-.header-menu-item a:hover {
+.header-menu-item a:after {
     display: block;
-    color: #007CCC;
-    text-decoration: underline;
-    -webkit-transform: scale(1.05,1.0);
-    -moz-transform: scale(1.05,1.0);
-    -ms-transform: scale(1.05,1.0);
-    -o-transform: scale(1.05,1.0);
-    transform: scale(1.05,1.0);
-    -webkit-transition: 0.1s ease;
-    -moz-transition: 0.1s ease;
-    -ms-transition: 0.1s ease;
-    -o-transition: 0.1s ease;
-    transition: 0.1s ease;
+    content: '';
+    background: #007CCC;
+    height: 2px;
+    width: 0;
+    -webkit-transition: width 0.2s ease-in-out;
+    -moz-transition: width 0.2s ease-in-out;
+    -ms-transition: width 0.2s ease-in-out;
+    -o-transition: width 0.2s ease-in-out;
+    transition: width 0.2s ease-in-out;
+}
+.header-menu-item a:hover:after,
+.header-menu-item a:focus:after {
+    width: 100%;
 }
 .main-left-block {
     box-sizing: border-box;
@@ -107,7 +120,7 @@ background: rgba(255,255,255,0.5);
     float: right;
 }
 .main-right-block-contacts-header {
-    font: 600 italic 30px 'Papyrus', sans-serif;
+    font: 600 italic 30px 'Buccaneer Cyr', sans-serif;
     margin: 10px;
 }
 .main-right-block-contacts {
