@@ -1,0 +1,85 @@
+/*CLEAR FIX*/
+.cf:before, .cf:after {
+    content: "";
+    display: table;
+}
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
+}
+@font-face {
+    font-family: 'Toms Handwritten'; /* Гарнитура шрифта */
+    src: url(../fonts/toms_handwritten_new.ttf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: 'Fonts Online'; /* Гарнитура шрифта */
+    src: url(../fonts/fonts_online.ttf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: 'Papyrus'; /* Гарнитура шрифта */
+    src: url(../fonts/1_Papyrus.ttf); /* Путь к файлу со шрифтом */
+}
+body {
+    background: #faf9f0;
+}
+.wrapper {
+    max-width: 1120px;
+    margin: auto;
+}
+.logo {
+    float: left;
+}
+.logo img {
+    width: 400px;
+}
+.header-container {
+    padding-top: 15px;
+    height: 200px;
+}
+ul {
+    text-align: center;
+}
+.header-menu-item:last-of-type {
+    border: none;
+}
+.header-menu-item {
+    display: inline-block;
+    font: 600 italic 30px 'Papyrus', sans-serif;
+    list-style: none;
+    padding: 10px 15px 0 15px;
+    border-right: 1px solid #000000;
+}
+.header-menu-item a {
+    color: #0088CC;
+    text-decoration: none;
+}
+.main-block {
+    border: 1px solid red;
+    padding: 30px;
+}
+.main-block-item {
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    border: 3px ridge #696969;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 175px;
+}
+figure {
+    margin: 0;
+}
+figure img {
+    width: 175px;
+    /*text-align: center;*/
+}
+figcaption {
+    /*font: 400 30px 'Toms Handwritten', sans-serif;*/
+    font: 600 24px 'Delius Unicase', cursive;
+    text-decoration: none;
+    color: #000;
+}
