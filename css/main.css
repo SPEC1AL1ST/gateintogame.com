@@ -29,57 +29,105 @@ body {
     margin: auto;
 }
 .logo {
+    margin-top: 20px;
     float: left;
 }
 .logo img {
     width: 400px;
 }
 .header-container {
-    padding-top: 15px;
-    height: 200px;
+    padding-top: 10px;
+    height: 180px;
 }
 ul {
     text-align: center;
-}
-.header-menu-item:last-of-type {
-    border: none;
+    white-space: nowrap;
 }
 .header-menu-item {
     display: inline-block;
     font: 600 italic 30px 'Papyrus', sans-serif;
     list-style: none;
     padding: 10px 15px 0 15px;
-    border-right: 1px solid #000000;
 }
+
 .header-menu-item a {
     color: #0088CC;
     text-decoration: none;
 }
-.main-block {
-    border: 1px solid red;
-    padding: 30px;
+.header-menu-item a:hover {
+    display: block;
+    color: #007CCC;
+    text-decoration: underline;
+    -webkit-transform: scale(1.05,1.0);
+    -moz-transform: scale(1.05,1.0);
+    -ms-transform: scale(1.05,1.0);
+    -o-transform: scale(1.05,1.0);
+    transform: scale(1.05,1.0);
+    -webkit-transition: 0.1s ease;
+    -moz-transition: 0.1s ease;
+    -ms-transition: 0.1s ease;
+    -o-transition: 0.1s ease;
+    transition: 0.1s ease;
 }
-.main-block-item {
+.main-left-block {
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 10px 0 0 10px;
+    padding: 80px 20px 20px;
+    max-width: 65%;
+    float: left;
+}
+.main-left-block-item {
     display: inline-block;
     cursor: pointer;
     text-align: center;
-    border: 3px ridge #696969;
+    border: 3px ridge rgba(255,255,255,0.5);
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
     padding: 10px;
-    width: 175px;
+    width: 185px;
+    margin: 5px;
+    height: 65px;
 }
-figure {
-    margin: 0;
+.main-left-block-item:hover {
+background: rgba(255,255,255,0.5);
 }
-figure img {
-    width: 175px;
-    /*text-align: center;*/
+.main-left-block-item img {
+    height: 70px;
+    max-width: 175px;
 }
-figcaption {
-    /*font: 400 30px 'Toms Handwritten', sans-serif;*/
-    font: 600 24px 'Delius Unicase', cursive;
-    text-decoration: none;
-    color: #000;
+.main-right-block-contacts-container {
+    text-align: center;
+    box-sizing: border-box;
+    width: 35%;
+    height: 320px;
+    border: 1px solid #000000;
+    border-left: none;
+    float: right;
 }
+.main-right-block-contacts-header {
+    font: 600 italic 30px 'Papyrus', sans-serif;
+    margin: 10px;
+}
+.main-right-block-contacts {
+    height: 220px;
+    width: 355px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+/*figcaption {*/
+    /*!*font: 400 30px 'Toms Handwritten', sans-serif;*!*/
+    /*font: 600 24px 'Delius Unicase', cursive;*/
+    /*text-decoration: none;*/
+    /*color: #000;*/
+/*}*/
