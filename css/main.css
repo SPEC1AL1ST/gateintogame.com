@@ -29,10 +29,10 @@
     font-family: 'ILK Comic'; /* Гарнитура шрифта */
     src: url(../fonts/ILK_Comic.otf); /* Путь к файлу со шрифтом */
 }
-@font-face {
-    font-family: 'Papyrus_Ru'; /* Гарнитура шрифта */
-    src: url(../fonts/papyrus_ru.ttf); /* Путь к файлу со шрифтом */
-}
+/*@font-face {*/
+    /*font-family: 'TomsHandwriting'; !* Гарнитура шрифта *!*/
+    /*src: url(../fonts/TomsHandwriting.ttf); !* Путь к файлу со шрифтом *!*/
+/*}*/
 body {
     background: #faf9f0;
 }
@@ -57,7 +57,7 @@ ul {
 }
 .header-menu-item {
     display: inline-block;
-    font: 600 italic 30px 'Papyrus_Ru', sans-serif;
+    font: 600 italic 30px 'TomsHandwriting', sans-serif;
     list-style: none;
     padding: 10px 15px 0 15px;
 }
@@ -70,17 +70,12 @@ ul {
     display: block;
     content: '';
     background: #007CCC;
-    height: 2px;
-    width: 0;
-    -webkit-transition: width 0.2s ease-in-out;
-    -moz-transition: width 0.2s ease-in-out;
-    -ms-transition: width 0.2s ease-in-out;
-    -o-transition: width 0.2s ease-in-out;
-    transition: width 0.2s ease-in-out;
+    border-bottom: solid 2px #007CCC;
+    transform: scaleX(0);
+    transition: transform 0.2s ease-in-out;
 }
-.header-menu-item a:hover:after,
-.header-menu-item a:focus:after {
-    width: 100%;
+.header-menu-item a:hover:after {
+    transform: scaleX(1);
 }
 .main-left-block {
     box-sizing: border-box;
