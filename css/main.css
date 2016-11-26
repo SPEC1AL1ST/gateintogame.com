@@ -51,17 +51,31 @@ body {
     padding-top: 10px;
     height: 180px;
 }
+.header-menu {
+    float: right;
+    width: 700px;
+}
 ul {
     text-align: center;
     white-space: nowrap;
 }
+.header-menu-top,
+.header-menu-bottom{
+    padding: 0;
+}
+.header-menu-top {
+    margin-top: 40px;
+}
 .header-menu-item {
     display: inline-block;
-    font: 600 italic 30px 'TomsHandwriting', sans-serif;
+    font: 600 italic 28px 'TomsHandwriting', sans-serif;
     list-style: none;
-    padding: 10px 15px 0 15px;
+    padding: 0 15px;
 }
-
+/*.header-menu-item:hover {*/
+    /*background: rgba(255,255,255,0.8);*/
+    /*border-radius: 10px;*/
+/*}*/
 .header-menu-item a {
     color: #0088CC;
     text-decoration: none;
