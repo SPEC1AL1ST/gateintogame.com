@@ -269,12 +269,14 @@ h2 {
     border-radius: 10px;
     width: 355px;
 }
+
 .main-right-block-reviews-hidden {
-    overflow: auto;
     max-height: 195px;
     max-width: 345px;
     margin: 5px;
+    overflow: auto;
 }
+
 .reviews-table {
     display: table;
 }
@@ -285,7 +287,6 @@ h2 {
 
 .reviews-table-cell {
     display: table-cell;
-    /*padding: 5px;*/
     border-bottom: 1px solid #c0c0c0;
 }
 
