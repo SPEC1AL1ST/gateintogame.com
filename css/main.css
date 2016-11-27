@@ -3,83 +3,98 @@
     content: "";
     display: table;
 }
+
 .cf:after {
     clear: both;
 }
+
 .cf {
     *zoom: 1;
 }
+
 @font-face {
     font-family: 'Toms Handwritten'; /* Гарнитура шрифта */
     src: url(../fonts/toms_handwritten_new.ttf); /* Путь к файлу со шрифтом */
 }
+
 @font-face {
     font-family: 'Fonts Online'; /* Гарнитура шрифта */
     src: url(../fonts/fonts_online.ttf); /* Путь к файлу со шрифтом */
 }
+
 @font-face {
     font-family: 'Papyrus'; /* Гарнитура шрифта */
     src: url(../fonts/1_Papyrus.ttf); /* Путь к файлу со шрифтом */
 }
+
 @font-face {
     font-family: 'Buccaneer Cyr'; /* Гарнитура шрифта */
     src: url(../fonts/buccaneer_cyr.ttf); /* Путь к файлу со шрифтом */
 }
+
 @font-face {
     font-family: 'ILK Comic'; /* Гарнитура шрифта */
     src: url(../fonts/ILK_Comic.otf); /* Путь к файлу со шрифтом */
 }
+
 /*@font-face {*/
-    /*font-family: 'TomsHandwriting'; !* Гарнитура шрифта *!*/
-    /*src: url(../fonts/TomsHandwriting.ttf); !* Путь к файлу со шрифтом *!*/
+/*font-family: 'TomsHandwriting'; !* Гарнитура шрифта *!*/
+/*src: url(../fonts/TomsHandwriting.ttf); !* Путь к файлу со шрифтом *!*/
 /*}*/
 body {
     background: #faf9f0;
 }
+
 .wrapper {
     max-width: 1120px;
     margin: auto;
 }
+
 .logo {
     margin-top: 20px;
     float: left;
 }
+
 .logo img {
     width: 400px;
 }
+
 .header-container {
     padding-top: 10px;
     height: 180px;
 }
+
 .header-menu {
     float: right;
     width: 700px;
 }
+
 ul {
     text-align: center;
     white-space: nowrap;
 }
+
 .header-menu-top,
-.header-menu-bottom{
+.header-menu-bottom {
     padding: 0;
 }
+
 .header-menu-top {
     margin-top: 40px;
 }
+
 .header-menu-item {
     display: inline-block;
     font: 600 italic 28px 'TomsHandwriting', sans-serif;
     list-style: none;
     padding: 0 15px;
 }
-/*.header-menu-item:hover {*/
-    /*background: rgba(255,255,255,0.8);*/
-    /*border-radius: 10px;*/
-/*}*/
+
 .header-menu-item a {
     color: #0088CC;
     text-decoration: none;
 }
+
 .header-menu-item a:after {
     display: block;
     content: '';
@@ -88,22 +103,28 @@ ul {
     transform: scaleX(0);
     transition: transform 0.1s ease-in-out;
 }
+
 .header-menu-item a:hover:after {
     transform: scaleX(1);
 }
+
 .main-left-block {
     box-sizing: border-box;
-    border: 1px solid black;
+    border: 1px solid #c0c0c0;
+    -webkit-border-radius: 10px 0 0 10px;
+    -moz-border-radius: 10px 0 0 10px;
     border-radius: 10px 0 0 10px;
-    padding: 75px 20px 20px;
+    padding: 65px 20px 20px;
     max-width: 65%;
     float: left;
+    min-height: 740px;
 }
+
 .main-left-block-item {
     display: inline-block;
     cursor: pointer;
     text-align: center;
-    border: 3px ridge rgba(255,255,255,0.5);
+    border: 3px ridge rgba(255, 255, 255, 0.5);
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
@@ -112,44 +133,180 @@ ul {
     margin: 5px;
     height: 65px;
 }
+
 .main-left-block-item:hover {
-background: rgba(255,255,255,0.5);
+    background: rgba(255, 255, 255, 0.5);
+
 }
+
+.main-left-block-item:active {
+    border: 3px groove rgba(255, 255, 255, 0.5);
+}
+
 .main-left-block-item img {
     height: 70px;
     max-width: 175px;
 }
-.main-right-block-contacts-container {
+
+.wow,
+.archeage,
+.bless,
+.revelation,
+.l2,
+.l2c,
+.bdo,
+.gw2,
+.tera,
+.swtor,
+.aion {
+    filter: grayscale(100%);
+}
+
+.main-right-block {
     text-align: center;
-    box-sizing: border-box;
-    width: 35%;
-    height: 320px;
-    border: 1px solid #000000;
-    border-left: none;
-    float: right;
 }
-.main-right-block-contacts-header {
+
+h2 {
     font: 600 italic 30px 'Buccaneer Cyr', sans-serif;
-    margin: 20px auto;
+    margin: 15px auto;
 }
+
+.main-right-block-contacts-container {
+    -webkit-border-radius: 0 10px 0 0;
+    -moz-border-radius: 0 10px 0 0;
+    border-radius: 0 10px 0 0;
+    border: 1px solid #c0c0c0;
+    border-left: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: right;
+    height: 315px;
+    width: 35%;
+}
+
 .main-right-block-contacts {
     margin: 0 auto;
     height: 220px;
     width: 355px;
-    border: 1px solid #000000;
+    border: 1px solid #c0c0c0;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
     border-radius: 10px;
 }
 
+.main-right-block-track-order-container {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 35%;
+    height: 125px;
+    border: 1px solid #c0c0c0;
+    border-top: none;
+    border-left: none;
+    float: right;
+}
 
+.main-right-block-search-box {
+    display: inline-block;
+    border: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 30px;
+    padding: 4px;
+    width: 260px;
+}
 
+.main-right-block-search-box-input {
+    border: 1px solid #dbdbdb;
+    float: left;
+    font: 14px 'Arial', sans-serif;
+    height: 24px;
+    width: 190px;
+}
 
+.main-right-block-search-box-button {
+    border: 3px groove rgba(255, 255, 255, 0.5);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+    font-size: 13px;
+    height: 24px;
+}
 
+.main-right-block-search-box-button:hover {
+    background: rgba(204, 204, 204, 0.5);
+}
 
+.main-right-block-search-box-button:active {
+    border: 3px ridge rgba(255, 255, 255, 0.5);
+}
 
+.main-right-block-reviews-container {
+    -webkit-border-radius: 0 0 0 10px;
+    -moz-border-radius: 0 0 0 10px;
+    border-radius: 0 0 10px 0;
+    border: 1px solid #c0c0c0;
+    border-top: none;
+    border-left: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: right;
+    height: 300px;
+    width: 35%;
+}
+
+.main-right-block-reviews {
+    margin: 0 auto;
+    max-height: 205px;
+    border: 1px solid #c0c0c0;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    width: 355px;
+}
+.main-right-block-reviews-hidden {
+    overflow: auto;
+    max-height: 195px;
+    max-width: 345px;
+    margin: 5px;
+}
+.reviews-table {
+    display: table;
+}
+
+.reviews-table-row {
+    display: table-row;
+}
+
+.reviews-table-cell {
+    display: table-cell;
+    /*padding: 5px;*/
+    border-bottom: 1px solid #c0c0c0;
+}
+
+.reviews-table-name {
+    max-width: 110px;
+    min-width: 70px;
+    overflow: hidden;
+}
+
+.reviews-table-review {
+    max-width: 205px;
+    overflow: hidden;
+}
+
+.reviews-table-head {
+    font: 600 italic 20px 'Buccaneer Cyr', sans-serif;
+}
 
 /*figcaption {*/
-    /*!*font: 400 30px 'Toms Handwritten', sans-serif;*!*/
-    /*font: 600 24px 'Delius Unicase', cursive;*/
-    /*text-decoration: none;*/
-    /*color: #000;*/
+/*!*font: 400 30px 'Toms Handwritten', sans-serif;*!*/
+/*font: 600 24px 'Delius Unicase', cursive;*/
+/*text-decoration: none;*/
+/*color: #000;*/
 /*}*/
