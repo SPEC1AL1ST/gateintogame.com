@@ -111,9 +111,9 @@ ul {
     -moz-border-radius: 10px 0 0 10px;
     border-radius: 10px 0 0 10px;
     padding: 65px 20px 20px;
-    max-width: 65%;
+    max-width: 64%;
     float: left;
-    min-height: 740px;
+    min-height: 800px;
 }
 
 .main-left-block-item {
@@ -178,13 +178,13 @@ h2 {
     box-sizing: border-box;
     float: right;
     height: 380px;
-    width: 35%;
+    width: 36%;
 }
 
 .main-right-block-contacts {
     margin: 0 auto;
     height: 285px;
-    width: 355px;
+    width: 375px;
     border: 1px solid #c0c0c0;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -192,16 +192,41 @@ h2 {
     text-align: center;
 }
 
+.main-right-block-contacts-information {
+    margin: 10px 0 0 13px;
+    float: left;
+    text-align: left;
+}
+
+.main-right-block-contacts-information-item {
+    margin-top: 6px;
+    font-size: 13px;
+}
+
+.main-right-block-contacts-information img {
+    height: 24px;
+    width: 24px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.main-right-block-contacts-information a {
+    text-decoration: none;
+    color: #000000;
+}
+
 #vk_groups {
     display: inline-block;;
+    float: right;
+    margin-right: 5px;
 }
 
 .main-right-block-track-order-container {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    width: 35%;
-    height: 125px;
+    width: 36%;
+    height: 120px;
     border: 1px solid #c0c0c0;
     border-top: none;
     border-left: none;
@@ -258,7 +283,7 @@ h2 {
     box-sizing: border-box;
     float: right;
     height: 300px;
-    width: 35%;
+    width: 36%;
 }
 
 .main-right-block-reviews {
@@ -268,12 +293,12 @@ h2 {
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
-    width: 355px;
+    width: 375px;
 }
 
 .main-right-block-reviews-hidden {
     max-height: 195px;
-    max-width: 345px;
+    max-width: 365px;
     margin: 5px;
     overflow: auto;
 }
@@ -289,18 +314,18 @@ h2 {
 .reviews-table-cell {
     display: table-cell;
     border-bottom: 1px solid #c0c0c0;
+    overflow: hidden;
 }
 
 .reviews-table-name {
     max-width: 110px;
     min-width: 70px;
-    overflow: hidden;
     vertical-align: middle;
 }
 
 .reviews-table-review {
-    max-width: 205px;
-    overflow: hidden;
+    padding-left: 5px;
+    max-width: 225px;
 }
 
 .reviews-table-head {
