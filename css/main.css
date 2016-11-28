@@ -37,10 +37,6 @@
     src: url(../fonts/ILK_Comic.otf); /* Путь к файлу со шрифтом */
 }
 
-/*@font-face {*/
-/*font-family: 'TomsHandwriting'; !* Гарнитура шрифта *!*/
-/*src: url(../fonts/TomsHandwriting.ttf); !* Путь к файлу со шрифтом *!*/
-/*}*/
 body {
     background: #faf9f0;
 }
@@ -181,18 +177,23 @@ h2 {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     float: right;
-    height: 315px;
+    height: 380px;
     width: 35%;
 }
 
 .main-right-block-contacts {
     margin: 0 auto;
-    height: 220px;
+    height: 285px;
     width: 355px;
     border: 1px solid #c0c0c0;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
+    text-align: center;
+}
+
+#vk_groups {
+    display: inline-block;;
 }
 
 .main-right-block-track-order-container {
@@ -294,6 +295,7 @@ h2 {
     max-width: 110px;
     min-width: 70px;
     overflow: hidden;
+    vertical-align: middle;
 }
 
 .reviews-table-review {
@@ -304,10 +306,3 @@ h2 {
 .reviews-table-head {
     font: 600 italic 20px 'Buccaneer Cyr', sans-serif;
 }
-
-/*figcaption {*/
-/*!*font: 400 30px 'Toms Handwritten', sans-serif;*!*/
-/*font: 600 24px 'Delius Unicase', cursive;*/
-/*text-decoration: none;*/
-/*color: #000;*/
-/*}*/
