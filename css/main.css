@@ -81,7 +81,7 @@ ul {
 
 .header-menu-item {
     display: inline-block;
-    font: 600 italic 28px 'TomsHandwriting', sans-serif;
+    font: 600 italic 28px 'Comfortaa', sans-serif;
     list-style: none;
     padding: 0 15px;
 }
@@ -163,7 +163,7 @@ ul {
 }
 
 h2 {
-    font: 600 italic 30px 'Buccaneer Cyr', sans-serif;
+    font: 600 italic 30px 'Comfortaa', sans-serif;
     margin: 15px auto;
 }
 
@@ -329,5 +329,5 @@ h2 {
 }
 
 .reviews-table-head {
-    font: 600 italic 20px 'Buccaneer Cyr', sans-serif;
+    font: 600 italic 20px 'Arial', sans-serif;
 }
