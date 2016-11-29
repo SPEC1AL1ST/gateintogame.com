@@ -40,14 +40,14 @@ body {
     max-width: 700px;
 }
 
-.header-menu-top,
-.header-menu-bottom {
+.header-menu-list-top,
+.header-menu-list-bottom {
     text-align: center;
     white-space: nowrap;
     padding: 0;
 }
 
-.header-menu-top {
+.header-menu-list-top {
     margin-top: 35px;
 }
 
@@ -169,7 +169,7 @@ h1 {
     padding: 0 5px;
 }
 
-.main-right-block {
+.main-right-block-container {
     text-align: center;
 }
 
@@ -253,6 +253,7 @@ h2 {
 }
 
 .main-right-block-track-order-container {
+    text-align: center;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -368,21 +369,23 @@ h2 {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     border: 1px solid #c0c0c0;
+    border-top: none;
     -webkit-border-radius: 0 0 10px 10px;
     -moz-border-radius: 0 0 10px 10px;
     border-radius: 0 0 10px 10px;
-    max-width: 100%;
-    height: 200px;
+    height: 45px;
     text-align: center;
 }
-.footer-menu {
+.footer-menu-list {
+    display: inline-block;
     padding: 0;
+    margin: 0;
 }
 .footer-menu-item {
     display: inline-block;
     font: 700 italic 24px 'Comfortaa', serif;
     list-style: none;
-    padding: 0 5px;
+    padding: 5px 5px;
 }
 .footer-menu-item a {
     color: #0088CC;
