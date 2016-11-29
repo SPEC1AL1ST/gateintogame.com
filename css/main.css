@@ -151,7 +151,7 @@ ul {
 }
 
 h2 {
-    font: 600 italic 30px 'Comfortaa', sans-serif;
+    font: 600 italic 26px 'Comfortaa', sans-serif;
     margin: 15px auto;
     text-align: center;
 }
@@ -234,7 +234,7 @@ h2 {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     width: 37%;
-    height: 120px;
+    height: 110px;
     border: 1px solid #c0c0c0;
     border-top: none;
     border-left: none;
