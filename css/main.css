@@ -392,19 +392,17 @@ h2 {
     -webkit-border-radius: 0 0 10px 10px;
     -moz-border-radius: 0 0 10px 10px;
     border-radius: 0 0 10px 10px;
-    height: 45px;
     text-align: center;
 }
 
 .footer-menu-list {
-    display: inline-block;
     padding: 0;
     margin: 0;
 }
 
 .footer-menu-item {
     display: inline-block;
-    font: 700 italic 24px 'Comfortaa', serif;
+    font: 700 italic 22px 'Comfortaa', serif;
     list-style: none;
     padding: 5px 5px;
 }
@@ -412,4 +410,25 @@ h2 {
 .footer-menu-item a {
     color: #0088CC;
     text-decoration: none;
+}
+
+.footer-bottom {
+    background: rgba(255, 255, 255, 0.4);
+    margin: 5px 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #c0c0c0;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    padding-top: 10px;
+    height: 120px;
+}
+
+.footer-bottom-copyright {
+    padding: 0 0 0 30px;
+}
+.footer-bottom-buttons {
+    text-align: center;
 }
