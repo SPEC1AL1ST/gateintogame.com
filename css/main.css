@@ -39,7 +39,7 @@ body {
 
 .header-container {
     padding-top: 10px;
-    height: 180px;
+    height: 160px;
 }
 
 .header-menu {
@@ -58,7 +58,7 @@ ul {
 }
 
 .header-menu-top {
-    margin-top: 40px;
+    margin-top: 35px;
 }
 
 .header-menu-item {
@@ -95,7 +95,7 @@ ul {
     -moz-border-radius: 10px 0 0 10px;
     border-radius: 10px 0 0 10px;
     max-width: 63%;
-    min-height: 800px;
+    min-height: 885px;
     float: left;
     text-align: center;
 }
@@ -141,6 +141,12 @@ ul {
 /*.aion {*/
 /*filter: grayscale(100%);*/
 /*}*/
+
+.main-left-block-payment-methods-item img {
+    display: inline-block;
+    margin: 0 5px 10px;
+}
+
 .main-left-block-about-our-shop-container {
     background: #ebeae1;
     -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
