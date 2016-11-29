@@ -22,17 +22,17 @@ body {
 }
 
 .logo {
-    margin-top: 20px;
+    margin: 20px 0 0 10px;
     float: left;
 }
 
 .logo img {
-    width: 400px;
+    width: 350px;
 }
 
 .header-container {
     padding-top: 10px;
-    height: 160px;
+    height: 150px;
 }
 
 .header-menu {
@@ -48,12 +48,12 @@ body {
 }
 
 .header-menu-list-top {
-    margin-top: 35px;
+    margin-top: 30px;
 }
 
 .header-menu-item {
     display: inline-block;
-    font: 700 italic 27px 'Comfortaa', serif;
+    font: 700 italic 26px 'Comfortaa', serif;
     list-style: none;
     padding: 0 15px;
 }
