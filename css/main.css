@@ -29,7 +29,7 @@ body {
 
 .header-container {
     background: rgba(255, 255, 255, 0.4);
-    margin-top: 5px;
+    margin: 5px 0;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -49,6 +49,7 @@ body {
     float: right;
     max-width: 700px;
     padding-right: 15px;
+    margin-top: 15px;
 }
 
 .header-menu-list-top,
@@ -56,10 +57,11 @@ body {
     text-align: center;
     white-space: nowrap;
     padding: 0;
+    margin: 0;
 }
 
-.header-menu-list-top {
-    margin-top: 15px;
+.header-menu-list-bottom {
+    margin-top: 10px;
 }
 
 .header-menu-item {
