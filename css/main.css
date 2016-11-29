@@ -197,12 +197,12 @@ h2 {
 
 .main-right-block-contacts-information-item {
     margin-top: 6px;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .main-right-block-contacts-information img {
-    height: 25px;
-    width: 25px;
+    height: 26px;
+    width: 26px;
     margin-right: 5px;
     vertical-align: middle;
 }
@@ -212,16 +212,21 @@ h2 {
     color: #000000;
 }
 
+.main-right-block-contacts-information-item:hover {
+    font-weight: 600;
+}
+
 #vk_groups {
     display: inline-block;;
     float: right;
     margin-right: 5px;
+    margin-top: 5px;
 }
 
 .social-pages-links img {
     width: 30px;
     height: 30px;
-    margin: 6px 15px 6px 0;
+    margin: 6px 15px 4px 0;
 }
 
 .main-right-block-track-order-container {
@@ -291,7 +296,7 @@ h2 {
 
 .main-right-block-reviews {
     margin: 0 auto;
-    max-height: 205px;
+    height: 205px;
     border: 1px solid #c0c0c0;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -300,8 +305,8 @@ h2 {
 }
 
 .main-right-block-reviews-hidden {
-    max-height: 195px;
-    max-width: 365px;
+    height: 195px;
+    width: 365px;
     margin: 5px;
     overflow: auto;
 }
@@ -331,7 +336,6 @@ h2 {
 
 .reviews-table-name {
     max-width: 110px;
-    min-width: 70px;
     vertical-align: middle;
 }
 
