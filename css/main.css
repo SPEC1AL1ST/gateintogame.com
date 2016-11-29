@@ -96,7 +96,7 @@ body {
     -moz-border-radius: 10px 0 0 0;
     border-radius: 10px 0 0 0;
     max-width: 63%;
-    height: 895px;
+    height: 885px;
     float: left;
     text-align: center;
 }
@@ -383,7 +383,7 @@ h2 {
     -moz-border-radius: 0 0 10px 10px;
     border-radius: 0 0 10px 10px;
     max-width: 100%;
-    min-height: 200px;
+    /*min-height: 200px;*/
     text-align: center;
 }
 .footer-menu {
