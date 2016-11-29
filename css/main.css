@@ -13,13 +13,13 @@
 }
 
 body {
-    background: url("../img/bg.jpg") fixed;
+    background: url("../img/bg.jpg") scroll;
 }
 
 .wrapper {
     max-width: 1100px;
     margin: auto;
-    background: #faf9f0;
+    /*background: #faf9f0;*/
 }
 
 .logo {
@@ -79,6 +79,7 @@ body {
 }
 
 .main-left-block-container {
+    background: #faf9f0;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -190,6 +191,7 @@ h2 {
 }
 
 .main-right-block-contacts-container {
+    background: #faf9f0;
     -webkit-border-radius: 0 10px 0 0;
     -moz-border-radius: 0 10px 0 0;
     border-radius: 0 10px 0 0;
@@ -255,6 +257,7 @@ h2 {
 }
 
 .main-right-block-track-order-container {
+    background: #faf9f0;
     text-align: center;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -306,6 +309,7 @@ h2 {
 }
 
 .main-right-block-reviews-container {
+    background: #faf9f0;
     border: 1px solid #c0c0c0;
     border-top: none;
     border-left: none;
@@ -368,6 +372,7 @@ h2 {
 }
 
 .footer-container {
+    background: #faf9f0;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
