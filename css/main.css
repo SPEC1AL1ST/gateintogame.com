@@ -13,16 +13,17 @@
 }
 
 body {
-    background: #faf9f0;
+    background: url("../img/bg.jpg") fixed;
 }
 
 .wrapper {
     max-width: 1100px;
     margin: auto;
+    background: #faf9f0;
 }
 
 .logo {
-    margin: 0 0 0 20px;
+    margin: 0 0 0 30px;
     float: left;
 }
 
@@ -38,6 +39,7 @@ body {
 .header-menu {
     float: right;
     max-width: 700px;
+    padding-right: 15px;
 }
 
 .header-menu-list-top,
