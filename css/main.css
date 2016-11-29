@@ -63,7 +63,7 @@ ul {
 
 .header-menu-item {
     display: inline-block;
-    font: 700 italic 28px 'Comfortaa', serif;
+    font: 700 italic 27px 'Comfortaa', serif;
     list-style: none;
     padding: 0 15px;
 }
@@ -100,10 +100,6 @@ ul {
     text-align: center;
 }
 
-.main-left-block {
-    margin: 0 auto;
-}
-
 .main-left-block-item {
     display: inline-block;
     cursor: pointer;
@@ -132,18 +128,49 @@ ul {
     max-width: 175px;
 }
 
-.wow,
-.archeage,
-.bless,
-.revelation,
-.l2,
-.l2c,
-.bdo,
-.gw2,
-.tera,
-.swtor,
-.aion {
-    filter: grayscale(100%);
+/*.wow,*/
+/*.archeage,*/
+/*.bless,*/
+/*.revelation,*/
+/*.l2,*/
+/*.l2c,*/
+/*.bdo,*/
+/*.gw2,*/
+/*.tera,*/
+/*.swtor,*/
+/*.aion {*/
+/*filter: grayscale(100%);*/
+/*}*/
+.main-left-block-about-our-shop-container {
+    background: #ebeae1;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    margin: 10px auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #c0c0c0;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    max-width: 660px;
+    height: 200px;
+}
+
+h1 {
+    color: #ff8a07;
+    font: 600 italic 15px 'Times New Roman', serif;
+    /*text-shadow: 0 0 1px #ffa500;*/
+}
+
+.main-left-block-about-our-shop-text {
+    font: 600 normal 14px 'Times New Roman', serif;
+}
+
+.main-left-block-about-our-shop-warning {
+    font: 400 normal 12px 'Times New Roman', serif;
+    text-align: justify;
+    padding: 0 5px;
 }
 
 .main-right-block {
@@ -174,7 +201,7 @@ h2 {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     float: right;
-    height: 480px;
+    height: 475px;
     width: 37%;
 }
 
