@@ -80,7 +80,6 @@ body {
 .header-menu-item a:after {
     display: block;
     content: '';
-    background: #007CCC;
     border-bottom: solid 2px #007CCC;
     transform: scaleX(0);
     transition: transform 0.1s ease-in-out;
@@ -411,6 +410,18 @@ h2 {
 .footer-menu-item a {
     color: #0088CC;
     text-decoration: none;
+}
+
+.footer-menu-item a:after {
+    display: block;
+    content: '';
+    border-bottom: solid 2px #007CCC;
+    transform: scaleX(0);
+    transition: transform 0.1s ease-in-out;
+}
+
+.footer-menu-item a:hover:after {
+    transform: scaleX(1);
 }
 
 .footer-bottom {
