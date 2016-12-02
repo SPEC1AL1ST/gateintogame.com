@@ -23,7 +23,7 @@ body {
 }
 
 .logo {
-    margin: 0 0 0 30px;
+    margin: 0 0 0 60px;
     float: left;
 }
 
@@ -48,8 +48,9 @@ body {
 .header-menu {
     float: right;
     max-width: 700px;
-    padding-right: 15px;
-    margin-top: 15px;
+    /*padding-right: 15px;*/
+    /*margin-top: 15px;*/
+    margin: 15px 45px 0 0;
 }
 
 .header-menu-list-top,
@@ -66,7 +67,7 @@ body {
 
 .header-menu-item {
     display: inline-block;
-    font: 700 italic 26px 'Comfortaa', serif;
+    font: 700 italic 26px 'Lobster', serif;
     list-style: none;
     padding: 0 15px;
 }
@@ -188,7 +189,7 @@ h1 {
 }
 
 h2 {
-    font: 600 italic 26px 'Comfortaa', sans-serif;
+    font: 600 italic 26px 'Lobster', sans-serif;
     margin: 15px auto;
     text-align: center;
 }
@@ -402,9 +403,9 @@ h2 {
 
 .footer-menu-item {
     display: inline-block;
-    font: 700 italic 22px 'Comfortaa', serif;
+    font: 700 italic 22px 'Lobster', serif;
     list-style: none;
-    padding: 5px 5px;
+    padding: 5px 15px;
 }
 
 .footer-menu-item a {
@@ -423,20 +424,21 @@ h2 {
     -moz-border-radius: 10px 10px 10px 10px;
     border-radius: 10px 10px 10px 10px;
     padding-top: 10px;
-    height: 90px;
+    height: 80px;
+    font: 600 16px 'Times New Roman', serif;
 }
 
 .footer-bottom-copyright {
     float: left;
-    height: 60px;
-    padding: 10px 30px 0;
+    height: 40px;
+    padding: 20px 30px 0;
     background: url(../img/footer-menu-border.png) no-repeat top right;
 }
 .footer-bottom-buttons {
     text-align: center;
     float: left;
     padding: 10px 30px 0;
-    height: 60px;
+    height: 50px;
     background: url(../img/footer-menu-border.png) no-repeat top right;
 }
 
@@ -448,4 +450,9 @@ h2 {
 .footer-bottom-buttons-item a {
     color: #000000;
     text-decoration: none;
+    font-size: 10px;
+}
+.footer-bottom-tagline {
+    display: inline-block;
+    padding: 20px 30px 0;
 }
