@@ -510,36 +510,79 @@ footer {
         width: 46%;
     }
 
+    /*.footer-container {*/
+        /*min-height: 90px;*/
+        /*padding-top: 5px;*/
+    /*}*/
+
+    /*.footer-copyright,*/
+    /*.footer-tagline {*/
+        /*margin: 20px 25px 0;*/
+    /*}*/
+
+    /*.footer-buttons {*/
+        /*height: 70px;*/
+    /*}*/
+
+    /*.footer-emoney-title {*/
+        /*display: none;*/
     .footer-container {
-        min-height: 90px;
-        padding-top: 5px;
+        font: 600 14px 'Times New Roman', serif;
+    }
+
+    .footer-copyright,
+    .footer-tagline,
+    .footer-buttons {
+        width: 30%;
     }
 
     .footer-copyright,
     .footer-tagline {
-        margin: 20px 25px 0;
-    }
-
-    .footer-buttons {
-        height: 70px;
-    }
-
-    .footer-emoney-title {
-        display: none;
+        margin: 15px 7px;
     }
 }
 
 @media screen and (max-width: 768px) {
     .wrapper {
-        width: 758px;
+        width: 760px;
     }
-
+    .header-container {
+        height: 100px;
+    }
+    .header-menu {
+        margin: 5px 5px 0 0;
+    }
     .logo img {
         width: 240px;
     }
 
     .header-menu-item {
         font: 700 italic 21px 'Lobster', serif;
+    }
+    .main-left-block-container {
+        max-width: 52%;
+        min-height: 0;
+        width: 52%;
+    }
+
+    .main-left-block-item {
+        height: 45px;
+        width: 135px;
+    }
+
+    .main-left-block-item img {
+        height: 50px;
+        max-width: 130px;
+    }
+
+    .main-right-block-container {
+        max-width: 48%;
+        min-height: 0;
+        width: 48%;
+    }
+    .main-right-block-contacts {
+        text-align: center;
+        width: 340px;
     }
 }
 
@@ -607,9 +650,9 @@ footer {
         min-height: 0;
         width: 100%;
     }
-
-    #vk_groups {
-        float: right;
+    .main-right-block-contacts {
+        text-align: center;
+        width: 340px;
     }
 
     .main-left-block-payment-methods-container {
@@ -632,21 +675,16 @@ footer {
 
     .footer-container {
         font: 600 12px 'Times New Roman', serif;
+        height: 90px;
     }
-
-    .footer-copyright,
-    .footer-tagline,
     .footer-buttons {
-        width: 30%;
+        margin: 0 auto;
+        height: 70px;
     }
-
-    .footer-copyright,
-    .footer-tagline {
-        margin: 20px 7px;
+    .footer-buttons-item {
+        padding: 0 6px;
     }
-
-    .main-right-block-contacts {
-        text-align: center;
-        width: 340px;
+    .footer-emoney-title {
+        display: none;
     }
 }
