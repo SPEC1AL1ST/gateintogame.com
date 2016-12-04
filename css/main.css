@@ -529,17 +529,21 @@ footer {
     }
 }
 
-/*@media screen and (max-width: 890px) {*/
-/*.logo img {*/
-/*width: 280px;*/
-/*}*/
+@media screen and (max-width: 768px) {
+    .wrapper {
+        width: 758px;
+    }
 
-/*.header-menu-item {*/
-/*font: 700 italic 21px 'Lobster', serif;*/
-/*}*/
-/*}*/
+    .logo img {
+        width: 240px;
+    }
 
-@media screen and (max-width: 890px) {
+    .header-menu-item {
+        font: 700 italic 21px 'Lobster', serif;
+    }
+}
+
+@media screen and (max-width: 600px) {
     .wrapper {
         max-width: 350px;
     }
