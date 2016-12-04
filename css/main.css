@@ -427,25 +427,28 @@ footer {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     font: 600 16px 'Times New Roman', serif;
-    height: 75px;
     margin: 5px 0;
     padding-top: 10px;
-
+    min-height: 75px;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .footer-copyright {
-    background: url(../img/footer-menu-border.png) no-repeat top right;
     float: left;
-    height: 35px;
-    padding: 20px 35px 0;
+    margin: 20px 25px 0;
+    width: 33%;
 }
 
 .footer-buttons {
-    background: url(../img/footer-menu-border.png) no-repeat top right;
+    background: url(../img/footer-menu-border.png) no-repeat top right, url(../img/footer-menu-border.png) no-repeat top left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     float: left;
     height: 50px;
-    padding: 5px 35px 0;
-    text-align: center;
+    margin: 5px 0 0;
+    width: 24%;
 }
 
 .footer-buttons-item {
@@ -461,8 +464,9 @@ footer {
 }
 
 .footer-tagline {
-    display: inline-block;
-    padding: 20px 35px 0;
+    width: 33%;
+    float: right;
+    margin: 20px 25px 0;
 }
 
 @media screen and (max-width: 1090px) {
@@ -510,10 +514,6 @@ footer {
 
     .main-left-block-container {
         width: 460px;
-    }
-
-    .main-right-block-container {
-        /*float: left;*/
     }
 }
 
