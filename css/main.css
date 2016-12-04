@@ -436,15 +436,12 @@ footer {
 
 .footer-copyright {
     float: left;
-    margin: 20px 25px 0;
-    width: 33%;
+    margin: 15px 25px 0;
+    width: 32%;
 }
 
 .footer-buttons {
     background: url(../img/footer-menu-border.png) no-repeat top right, url(../img/footer-menu-border.png) no-repeat top left;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
     float: left;
     height: 50px;
     margin: 5px 0 0;
@@ -464,20 +461,79 @@ footer {
 }
 
 .footer-tagline {
-    width: 33%;
-    float: right;
-    margin: 20px 25px 0;
+    float: left;
+    margin: 15px 25px 0;
+    width: 32%;
 }
 
-@media screen and (max-width: 1090px) {
-
+@media screen and (max-width: 1086px) {
+    .main-left-block-container,
+    .main-right-block-container {
+        min-height: 1075px;
+    }
+    .main-left-block-about-our-shop-container {
+        margin: 10px 5px;
+    }
 }
 
-@media screen and (max-width: 1045px) {
+@media screen and (max-width: 1058px) {
     .wrapper {
-        max-width: 730px;
+        max-width: 860px;
     }
 
+    .main-left-block-container,
+    .main-right-block-container {
+        min-height: 1215px;
+    }
+    .header-container {
+        height: 110px;
+        text-align: center;
+    }
+    .logo {
+        margin: 0 0 0 20px;
+    }
+    .logo img {
+        width: 300px;
+
+    }
+    .header-menu {
+        margin: 10px 5px 0 0;
+        max-width: 700px;
+    }
+
+    .header-menu-item {
+        font: 700 italic 22px 'Lobster', serif;
+    }
+
+    .main-left-block-container {
+        width: 460px;
+    }
+
+    .main-right-block-container {
+        width: 400px;
+    }
+    .footer-container {
+        min-height: 90px;
+        padding-top: 5px;
+    }
+    .footer-copyright,
+    .footer-tagline {
+        margin: 20px 25px 0;
+    }
+    .footer-buttons {
+        height: 70px;
+    }
+
+    .footer-emoney-title {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 800px) {
     .header-container {
         height: 190px;
         text-align: center;
@@ -512,15 +568,8 @@ footer {
         border-bottom: solid 2px #054bcc;
     }
 
-    .main-left-block-container {
-        width: 460px;
-    }
 }
 
-@media screen and (max-width: 800px) {
-
-}
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
 
 }
