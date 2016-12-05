@@ -10,6 +10,7 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/social-likes_birman.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
     <title>GateIntoGame: Самое лучшее - только для Вас!</title>
 </head>
 <body>
@@ -17,17 +18,22 @@
     <header>
         <div class="header-container cf">
             <div class="logo"><a href="//gateintogame.com"><img src="img/logo.png" alt="Logo"></a></div>
+            <div class="header-login">
+                <form name="user-login" class="user-login" action="#" method="post">
+                    <label>
+                        <input name="username" class="username" placeholder="username">
+                        <input name="userpassword" placeholder="password" type="password">
+                    </label>
+                </form>
+            </div>
             <div class="header-menu cf">
-                <ul class="header-menu-list-top">
-                    <li class="header-menu-item"><a href="about_us.html">О нас</a></li>
-                    <li class="header-menu-item"><a href="guarantee.html">Гарантии</a></li>
-                    <li class="header-menu-item"><a href="payment.html">Оплата</a></li>
-                    <li class="header-menu-item"><a href="supplier.html">Поставщикам</a></li>
-                </ul>
-                <ul class="header-menu-list-bottom">
-                    <li class="header-menu-item"><a href="guarantor.html">Гарант сделок</a></li>
-                    <li class="header-menu-item"><a href="services.html">Услуги</a></li>
-                    <li class="header-menu-item"><a href="personal_area.html">Личный кабинет</a></li>
+                <ul class="header-menu-list">
+                    <li class="header-menu-item"><a class="header-menu-item-button" href="about_us.html">О нас</a></li>
+                    <li class="header-menu-item"><a class="header-menu-item-button" href="guarantee.html">Гарантии</a></li>
+                    <li class="header-menu-item"><a class="header-menu-item-button" href="payment.html">Оплата</a></li>
+                    <li class="header-menu-item"><a class="header-menu-item-button" href="supplier.html">Поставщикам</a></li>
+                    <li class="header-menu-item"><a class="header-menu-item-button" href="guarantor.html">Гарант сделок</a></li>
+                    <li class="header-menu-item"><a class="header-menu-item-button" href="services.html">Услуги</a></li>
                 </ul>
             </div>
         </div>
@@ -35,7 +41,6 @@
     <main>
         <div class="main-left-block-container cf">
             <h2>Каталог игр</h2>
-            <!--<div class="main-left-block cf">-->
             <div class="main-left-block-item eve" onclick="location.href='game/eve_online.html';">
                 <img src="img/games/eve_logo.png" alt="EVE Online" title="EVE Online">
             </div>
@@ -113,7 +118,6 @@
                     ответственности за последствия и штрафы, примененные в связи нарушения правил и пунктов
                     пользовательского соглашения игр, с которыми мы работаем.</p>
             </div>
-            <!--</div>-->
         </div>
         <div class="main-right-block-container cf">
             <div class="main-right-block-contacts-container cf">
@@ -146,8 +150,8 @@
                     </div>
                     <div id="vk_groups"></div>
                     <div class="social-likes">
-                        <div class="social-pages-links">
-                            <h3 class="social-pages">Наши страницы</h3>
+                        <div class="main-right-block-contacts-social-pages-links">
+                            <h3 class="main-right-block-contacts-social-pages">Наши страницы</h3>
                             <a href="https://vk.com/gateintogame" target="_blank"><img src="img/vk_logo.png"
                                                                                        alt="Страница Вконтакте"
                                                                                        title="Страница Вконтакте"></a>
@@ -162,7 +166,7 @@
                                                              alt="Твиттер"
                                                              title="Твиттер"></a>
                         </div>
-                        <h3 class="social-sharing">Поделиться</h3>
+                        <h3 class="main-right-block-contacts-social-sharing">Поделиться</h3>
                         <div class="facebook" title="Поделиться ссылкой на Фейсбуке">Facebook</div>
                         <div class="mailru" title="Поделиться ссылкой в Моём мире">Мой мир</div>
                         <div class="vkontakte" title="Поделиться ссылкой во Вконтакте">Вконтакте</div>
@@ -279,7 +283,7 @@
 <script type="text/javascript" src="//vk.com/js/api/openapi.js?136"></script>
 <script type="text/javascript">VK.Widgets.Group("vk_groups", {
     mode: 3,
-    width: "185",
+    width: "220",
     color1: 'FAF9F0'
 }, 133736952);</script>
 <!--Битрикс24-->

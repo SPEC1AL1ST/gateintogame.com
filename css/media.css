@@ -1,0 +1,268 @@
+@media screen and (max-width: 1086px) {
+    .main-left-block-container,
+    .main-right-block-container {
+        min-height: 1075px;
+    }
+
+    .main-left-block-about-our-shop-container {
+        margin: 10px 5px;
+    }
+}
+
+@media screen and (max-width: 1058px) {
+    .wrapper {
+        max-width: 860px;
+    }
+
+    .main-left-block-container,
+    .main-right-block-container {
+        min-height: 1215px;
+    }
+
+    .header-container {
+        height: 110px;
+        text-align: center;
+    }
+
+    .logo {
+        margin: 0 0 0 20px;
+    }
+
+    .logo img {
+        width: 300px;
+
+    }
+
+    .header-menu {
+        margin: 10px 5px 0 0;
+        max-width: 700px;
+    }
+
+    .header-menu-item {
+        font: 700 italic 22px 'Lobster', serif;
+    }
+
+    .main-left-block-container {
+        width: 54%;
+    }
+
+    .main-right-block-container {
+        width: 46%;
+    }
+
+    /*.footer-container {*/
+    /*min-height: 90px;*/
+    /*padding-top: 5px;*/
+    /*}*/
+    /*.footer-copyright,*/
+    /*.footer-tagline {*/
+    /*margin: 20px 25px 0;*/
+    /*}*/
+    /*.footer-buttons {*/
+    /*height: 70px;*/
+    /*}*/
+    /*.footer-emoney-title {*/
+    /*display: none;*/
+    .footer-container {
+        font: 600 14px 'Times New Roman', serif;
+    }
+
+    .footer-copyright,
+    .footer-tagline,
+    .footer-buttons {
+        width: 30%;
+    }
+
+    .footer-copyright,
+    .footer-tagline {
+        margin: 15px 7px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        width: 760px;
+    }
+
+    .header-container {
+        height: 100px;
+    }
+
+    .header-menu {
+        margin: 5px 5px 0 0;
+    }
+
+    .logo img {
+        width: 240px;
+    }
+
+    .header-menu-item {
+        font: 700 italic 21px 'Lobster', serif;
+    }
+
+    .main-left-block-container {
+        max-width: 52%;
+        min-height: 1145px;
+        width: 52%;
+    }
+
+    .main-left-block-item {
+        height: 45px;
+        width: 135px;
+    }
+
+    .main-left-block-item img {
+        height: 50px;
+        max-width: 130px;
+    }
+
+    .main-right-block-container {
+        max-width: 48%;
+        min-height: 1145px;
+        width: 48%;
+    }
+
+    .main-right-block-contacts {
+        text-align: center;
+        width: 340px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper {
+        max-width: 350px;
+    }
+
+    .header-container {
+        height: 245px;
+        text-align: center;
+    }
+
+    .logo {
+        float: none;
+        margin: 0 auto;
+    }
+
+    .logo img {
+        width: 280px;
+    }
+
+    .header-menu {
+        display: block;
+        float: none;
+        margin: 0 auto;
+        max-width: 600px;
+    }
+
+    .header-menu-item {
+        font: 700 italic 26px 'Lobster', serif;
+    }
+
+    .header-menu-item a {
+        color: #054bcc;
+        text-decoration: none;
+    }
+
+    .header-menu-item a:after {
+        border-bottom: solid 2px #054bcc;
+    }
+
+    .header-menu-list-bottom {
+        margin-top: 0;
+    }
+
+    .main-left-block-container {
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        display: block;
+        float: none;
+        max-width: 100%;
+        min-height: 0;
+        width: 100%;
+    }
+
+    .main-right-block-container {
+        -webkit-border-radius: 10px 10px 0 0;
+        -moz-border-radius: 10px 10px 0 0;
+        border-radius: 10px 10px 0 0;
+        display: block;
+        float: none;
+        max-width: 100%;
+        min-height: 0;
+        width: 100%;
+    }
+
+    .main-right-block-contacts {
+        text-align: center;
+        width: 340px;
+    }
+
+    .main-right-block-contacts-information {
+        margin: 10px 0 0;
+    }
+
+    .main-right-block-contacts-information img {
+        margin-left: 5px;
+    }
+
+    .main-right-block-contacts-information-item {
+        font-size: 11px;
+    }
+
+    #vk_groups {
+        margin-right: 0;
+    }
+
+    .main-left-block-payment-methods-container {
+        display: none;
+    }
+
+    .main-left-block-item {
+        height: 45px;
+        width: 135px;
+    }
+
+    .main-left-block-item img {
+        height: 50px;
+        max-width: 130px;
+    }
+
+    .main-right-block-track-order-container {
+        display: none;
+    }
+
+    .main-right-block-reviews {
+        border: 1px solid #c0c0c0;
+        margin: 0 auto;
+        height: 240px;
+        width: 340px;
+    }
+
+    .main-right-block-reviews-hidden {
+        width: 330px;
+    }
+
+    .reviews-table-review {
+        padding-left: 5px;
+        max-width: 200px;
+    }
+
+    .footer-container {
+        font: 600 12px 'Times New Roman', serif;
+        height: 90px;
+    }
+
+    .footer-buttons {
+        margin: 0 auto;
+        height: 70px;
+    }
+
+    .footer-buttons-item {
+        padding: 0 6px;
+    }
+
+    .footer-emoney-title {
+        display: none;
+    }
+}
