@@ -78,10 +78,14 @@ body {
 
 .header-login {
     float: left;
+    margin-right: 30px
 }
 
 #wrapper p:first-child {
-    margin: 0px;
+    margin: 0;
+}
+#wrapper p {
+    margin: 8px 0;
 }
 
 #wrapper label {
@@ -192,8 +196,7 @@ input {
     box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.2) inset;
 }
 
-p.login.button,
-p.signin.button {
+p.login.button {
     text-align: right;
     margin: 0;
     display: inline;
@@ -203,6 +206,7 @@ p.signin.button {
 .keeplogin {
     margin: 0;
     display: inline;
+    padding-right: 30px;
 }
 
 .keeplogin input,
@@ -224,47 +228,15 @@ p.signin.button {
 /*styling the links to change from one form to another */
 
 p.change_link {
-    position: absolute;
     color: rgb(127, 124, 124);
-    left: 0px;
-    height: 20px;
-    width: 440px;
-    padding: 17px 30px 20px 30px;
     font-size: 16px;
     text-align: right;
-    border-top: 1px solid rgb(219, 229, 232);
+    margin: 5px 0 0 0;
+    /*border-top: 1px solid rgb(219, 229, 232);*/
     -webkit-border-radius: 0 0 5px 5px;
     -moz-border-radius: 0 0 5px 5px;
     border-radius: 0 0 5px 5px;
-    background: rgb(235, 231, 225);
-    background: -moz-repeating-linear-gradient(-45deg,
-    rgb(247, 247, 247),
-    rgb(247, 247, 247) 15px,
-    rgb(235, 231, 225) 15px,
-    rgb(235, 231, 225) 30px,
-    rgb(247, 247, 247) 30px
-    );
-    background: -webkit-repeating-linear-gradient(-45deg,
-    rgb(247, 247, 247),
-    rgb(247, 247, 247) 15px,
-    rgb(235, 231, 225) 15px,
-    rgb(235, 231, 225) 30px,
-    rgb(247, 247, 247) 30px
-    );
-    background: -o-repeating-linear-gradient(-45deg,
-    rgb(247, 247, 247),
-    rgb(247, 247, 247) 15px,
-    rgb(235, 231, 225) 15px,
-    rgb(235, 231, 225) 30px,
-    rgb(247, 247, 247) 30px
-    );
-    background: repeating-linear-gradient(-45deg,
-    rgb(247, 247, 247),
-    rgb(247, 247, 247) 15px,
-    rgb(235, 231, 225) 15px,
-    rgb(235, 231, 225) 30px,
-    rgb(247, 247, 247) 30px
-    );
+    background: rgba(235,231,225,0.5);
 }
 
 #wrapper p.change_link a {
@@ -298,6 +270,7 @@ p.change_link {
 }
 
 .header-menu-list {
+    clear: both;
     margin: 0;
     padding: 0;
     text-align: center;
