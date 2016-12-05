@@ -14,29 +14,50 @@
     <title>GateIntoGame: Самое лучшее - только для Вас!</title>
 </head>
 <body>
-<div class="wrapper">
+<div class="layout">
     <header>
         <div class="header-container cf">
             <div class="logo"><a href="//gateintogame.com"><img src="img/logo.png" alt="Logo"></a></div>
             <div class="header-login">
-                <form name="user-login" class="user-login" action="#" method="post">
-                    <label>
-                        <input name="username" class="username" placeholder="username">
-                        <input name="userpassword" placeholder="password" type="password">
-                    </label>
-                </form>
-            </div>
-            <div class="header-menu cf">
-                <ul class="header-menu-list">
-                    <li class="header-menu-item"><a class="header-menu-item-button" href="about_us.html">О нас</a></li>
-                    <li class="header-menu-item"><a class="header-menu-item-button" href="guarantee.html">Гарантии</a></li>
-                    <li class="header-menu-item"><a class="header-menu-item-button" href="payment.html">Оплата</a></li>
-                    <li class="header-menu-item"><a class="header-menu-item-button" href="supplier.html">Поставщикам</a></li>
-                    <li class="header-menu-item"><a class="header-menu-item-button" href="guarantor.html">Гарант сделок</a></li>
-                    <li class="header-menu-item"><a class="header-menu-item-button" href="services.html">Услуги</a></li>
-                </ul>
+                <div id="wrapper">
+                    <div id="login" class="animate form">
+                        <form action="mysuperscript.php" autocomplete="on" method="post">
+                            <!--<h1>Войти</h1>-->
+                            <p>
+                                <label for="username" class="uname" data-icon="u"> Ваш e-mail </label>
+                                <input id="username" name="username" required="required" type="text" placeholder="mymail@gmail.com"/>
+                            </p>
+                            <p>
+                                <label for="password" class="youpasswd" data-icon="p"> Ваш пароль </label>
+                                <input id="password" name="password" required="required" type="password" placeholder="например X8df!90EO"/>
+                            </p>
+                            <p class="keeplogin">
+                                <input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping"/>
+                                <label for="loginkeeping">Запомнить меня</label>
+                            </p>
+                            <p class="login button">
+                                <input type="submit" value="Войти"/>
+                            </p>
+                            <p class="change_link">
+                                Вы еще не с нами?
+                                <a href="login.html#toregister" class="to_register">Присоединиться</a>
+                            </p>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
+        <div class="header-menu cf">
+            <ul class="header-menu-list">
+                <li class="header-menu-item"><a class="header-menu-item-button" href="about_us.html">О нас</a></li>
+                <li class="header-menu-item"><a class="header-menu-item-button" href="guarantee.html">Гарантии</a></li>
+                <li class="header-menu-item"><a class="header-menu-item-button" href="payment.html">Оплата</a></li>
+                <li class="header-menu-item"><a class="header-menu-item-button" href="supplier.html">Поставщикам</a></li>
+                <li class="header-menu-item"><a class="header-menu-item-button" href="guarantor.html">Гарант сделок</a></li>
+                <li class="header-menu-item"><a class="header-menu-item-button" href="services.html">Услуги</a></li>
+            </ul>
+        </div>
+
     </header>
     <main>
         <div class="main-left-block-container cf">
