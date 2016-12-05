@@ -11,6 +11,7 @@
 .cf {
     *zoom: 1;
 }
+
 @font-face {
     font-family: 'BebasNeueRegular';
     src: url('../fonts/BebasNeue-webfont.eot');
@@ -21,6 +22,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 /** fonts used for the icons **/
 @font-face {
     font-family: 'FontomasCustomRegular';
@@ -82,7 +84,6 @@ body {
     width: 620px;
 }
 
-
 .form {
     float: right;
     width: 250px;
@@ -92,22 +93,24 @@ body {
 .form-social-auth-register-text {
     text-align: center;
 }
+
 .form-social-auth-register-text img {
-    height: 30px;
-    margin: 5px 15px 5px 0;
+    height: 36px;
+    margin: 10px 15px 5px 0;
     vertical-align: middle;
-    width: 30px;
+    width: 35px;
 }
 
 #wrapper p:first-child {
     margin: 0;
 }
+
 #wrapper p {
     margin: 8px 0;
 }
 
 #wrapper label {
-    color: rgb(96,84,64);
+    color: rgb(96, 84, 64);
     position: relative;
     vertical-align: top;
 }
@@ -163,7 +166,7 @@ input {
 [data-icon]:after {
     content: attr(data-icon);
     font-family: 'FontomasCustomRegular';
-    color: rgb(171,151,106);
+    color: rgb(171, 151, 106);
     position: absolute;
     left: 10px;
     top: 25px;
@@ -248,17 +251,17 @@ p.login.button {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    background: rgba(235,231,225,0.5);
+    background: rgba(235, 231, 225, 0.5);
     float: left;
     color: rgb(127, 124, 124);
     font-size: 16px;
     text-align: right;
     padding: 5px;
-    margin-top: 20px;
+    margin-top: 18px;
 }
 
 #wrapper .form-social-auth-register .change_link {
-    margin: 0;
+    margin: 10px 0 0 0;
 }
 
 p.change_link a {
