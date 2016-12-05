@@ -69,16 +69,34 @@ body {
 
 .logo {
     float: left;
-    margin: 0 0 0 30px;
+    margin: 12px 0 0 30px;
 }
 
 .logo img {
-    width: 340px;
+    width: 380px;
 }
 
 .header-login {
     float: left;
-    margin-right: 30px
+    margin-left: 50px;
+    width: 620px;
+}
+
+
+.form {
+    float: right;
+    width: 250px;
+    display: inline-block;
+}
+
+.form-social-auth-register-text {
+    text-align: center;
+}
+.form-social-auth-register-text img {
+    height: 30px;
+    margin: 5px 15px 5px 0;
+    vertical-align: middle;
+    width: 30px;
 }
 
 #wrapper p:first-child {
@@ -113,7 +131,7 @@ input {
 
 /* all the input except submit and checkbox */
 #wrapper input:not([type="checkbox"]) {
-    width: 76%;
+    width: 84%;
     padding: 5px 5px 5px 32px;
     border: 1px solid rgb(178, 178, 178);
     -webkit-appearance: textfield;
@@ -179,6 +197,7 @@ input {
     -moz-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
     transition: all 0.2s linear;
+    margin-bottom: 10px;
 }
 
 #wrapper p.button input:hover {
@@ -221,30 +240,34 @@ p.login.button {
 }
 
 .keeplogin label {
-    width: 48%;
+    width: 56%;
 }
 
 /*styling the links to change from one form to another */
-
-p.change_link {
+.form-social-auth-register {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background: rgba(235,231,225,0.5);
+    float: left;
     color: rgb(127, 124, 124);
     font-size: 16px;
     text-align: right;
-    margin: 5px 0 0 0;
-    /*border-top: 1px solid rgb(219, 229, 232);*/
-    -webkit-border-radius: 0 0 5px 5px;
-    -moz-border-radius: 0 0 5px 5px;
-    border-radius: 0 0 5px 5px;
-    background: rgba(235,231,225,0.5);
+    padding: 5px;
+    margin-top: 20px;
 }
 
-#wrapper p.change_link a {
+#wrapper .form-social-auth-register .change_link {
+    margin: 0;
+}
+
+p.change_link a {
     display: inline-block;
     font-weight: bold;
     background: rgb(247, 248, 241);
-    padding: 2px 6px;
+    padding: 2px 2px;
     color: rgb(29, 162, 193);
-    margin-left: 10px;
+    margin-left: 3px;
     text-decoration: none;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -273,11 +296,12 @@ p.change_link {
     margin: 0;
     padding: 0;
     text-align: center;
+    margin: 5px auto;
 }
 
 .header-menu-item {
     display: inline-block;
-    font: 700 italic 22px 'Lobster', serif;
+    font: 600 italic 22px 'Lobster', serif;
     list-style: none;
     padding: 0 5px;
 
@@ -321,7 +345,7 @@ p.change_link {
 }
 
 .header-menu-item a {
-    color: #0088CC;
+    color: #007CCC;
     text-decoration: none;
 }
 
@@ -665,7 +689,7 @@ footer {
 }
 
 .main-bottom-menu-list-item a {
-    color: #0088CC;
+    color: #007CCC;
     text-decoration: none;
 }
 
