@@ -257,7 +257,7 @@ p.login.button {
     font-size: 16px;
     text-align: right;
     padding: 5px;
-    margin-top: 18px;
+    margin-top: 14px;
 }
 
 #wrapper .form-social-auth-register .change_link {
@@ -295,16 +295,13 @@ p.change_link a {
 }
 
 .header-menu-list {
-    clear: both;
-    margin: 0;
     padding: 0;
-    text-align: center;
     margin: 5px auto;
+    text-align: center;
 }
 
 .header-menu-item {
     display: inline-block;
-    font: 600 italic 22px 'Lobster', serif;
     list-style: none;
     padding: 0 5px;
 
@@ -325,8 +322,8 @@ p.change_link a {
     display: inline-block;
     cursor: pointer;
     color: #505739;
-    font: 600 20px 'Arial', serif;
-    padding: 5px 15px;
+    font: 600 18px 'Arial', serif;
+    padding: 4px 15px;
     text-decoration: none;
     text-shadow: 0 1px 0 #ffffff;
 }
@@ -722,19 +719,18 @@ footer {
     padding-top: 10px;
     min-height: 75px;
     text-align: center;
-    vertical-align: middle;
 }
 
 .footer-copyright {
-    float: left;
+    display: inline-block;
     margin: 20px 25px 0;
+    vertical-align: top;
     width: 32%;
 }
 
 .footer-buttons {
     background: url(../img/footer-menu-border.png) no-repeat top right, url(../img/footer-menu-border.png) no-repeat top left;
-    float: left;
-    height: 50px;
+    display: inline-block;
     margin: 5px 0 0;
     width: 24%;
 }
@@ -742,7 +738,6 @@ footer {
 .footer-buttons-item {
     display: inline-block;
     padding: 0 10px;
-    vertical-align: top;
 }
 
 .footer-buttons-item a {
@@ -752,7 +747,8 @@ footer {
 }
 
 .footer-tagline {
-    float: left;
+    display: inline-block;
     margin: 20px 25px 0;
+    vertical-align: top;
     width: 32%;
 }
