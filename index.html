@@ -16,6 +16,17 @@
 <body>
 <div class="layout">
     <header>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a class="header-menu-item-button" href="about_us.html">О нас</a>
+            <a class="header-menu-item-button" href="guarantee.html">Гарантии</a>
+            <a class="header-menu-item-button" href="payment.html">Оплата</a>
+            <a class="header-menu-item-button" href="supplier.html">Поставщикам</a>
+            <a class="header-menu-item-button" href="guarantor.html">Гарант сделок</a>
+            <a class="header-menu-item-button" href="services.html">Услуги</a>
+            <a class="header-menu-item-button" href="personal_area.html">Личный кабинет</a>
+        </div>
+        <span class="sidenav-span" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
         <div class="header-container">
             <div class="logo"><a href="//gateintogame.com"><img src="img/logo.png" alt="Logo"></a></div>
             <div class="header-login">
@@ -313,6 +324,16 @@
 <!--<script src="js/main.js"></script>-->
 <script src="js/jquery-3.1.1.min.js"></script>
 <script src="js/social-likes.min.js"></script>
+<!--Slider-->
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
 <!--Главный виджет ВК-->
 <script type="text/javascript" src="//vk.com/js/api/openapi.js?136"></script>
 <script type="text/javascript">VK.Widgets.Group("vk_groups", {
