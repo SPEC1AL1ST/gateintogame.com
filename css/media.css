@@ -14,6 +14,22 @@
         max-width: 990px;
     }
 
+    .logo {
+        margin: 20px 0 0 30px;
+    }
+
+    .logo img {
+        width: 300px;
+    }
+
+    .header-login {
+        margin-right: 30px;
+    }
+
+    .form {
+        margin-left: 30px;
+    }
+
     .header-container {
         text-align: center;
     }
@@ -56,23 +72,23 @@
     }
 }
 
-@media screen and (max-width: 1024px) {
-    .logo {
-        margin: 20px 0 0 30px;
-    }
+/*@media screen and (max-width: 1024px) {*/
+    /*.logo {*/
+        /*margin: 20px 0 0 30px;*/
+    /*}*/
 
-    .logo img {
-        width: 300px;
-    }
+    /*.logo img {*/
+        /*width: 300px;*/
+    /*}*/
 
-    .header-login {
-        margin-right: 30px;
-    }
+    /*.header-login {*/
+        /*margin-right: 30px;*/
+    /*}*/
 
-    .form {
-        margin-left: 30px;
-    }
-}
+    /*.form {*/
+        /*margin-left: 30px;*/
+    /*}*/
+/*}*/
 
 @media screen and (max-width: 1000px) {
     .logo {
@@ -115,7 +131,7 @@
         z-index: 1;
         top: 0;
         left: 0;
-        background-color: #111;
+        background: rgba(1, 1, 1, 0.8);
         overflow-x: hidden;
         transition: 0.5s;
         padding-top: 15px;
@@ -171,10 +187,24 @@
         min-height: 1145px;
         width: 48%;
     }
-
 }
-
+@media screen and (max-width: 810px) {
+    .main-right-block-contacts-information-item {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 780px) {
+    .main-right-block-contacts-information-item {
+        font-size: 11px;
+    }
+}
 @media screen and (max-width: 768px) {
+    .main-right-block-contacts {
+        margin: 5px 5px;
+    }
+    .main-right-block-reviews {
+        margin: 5px 5px;
+    }
     .footer-container {
         font: 600 12px 'Times New Roman', serif;
         height: 90px;
@@ -190,6 +220,21 @@
     }
 
 }
+@media screen and (max-width: 750px) {
+    .main-right-block-contacts-information {
+        float: none;
+        margin-left: 9%;
+    }
+    .main-right-block-contacts-information-item {
+        display: inline-block;
+        width: 45%;
+    }
+    #vk_groups {
+        float: none;
+        display: inline-block;
+        /*margin-left: 15%;*/
+    }
+}
 
 @media screen and (max-width: 715px) {
     .footer-emoney-title {
@@ -197,7 +242,7 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
     .layout {
         max-width: 350px;
     }
@@ -260,9 +305,9 @@
         width: 340px;
     }
 
-    .main-right-block-contacts-information {
-        margin: 10px 0 0;
-    }
+    /*.main-right-block-contacts-information {*/
+        /*margin: 10px 0 0;*/
+    /*}*/
 
     .main-right-block-contacts-information img {
         margin-left: 5px;

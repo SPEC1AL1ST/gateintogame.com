@@ -548,7 +548,7 @@ h2 {
     margin: 0 auto;
     min-height: 385px;
     text-align: center;
-    width: 375px;
+    max-width: 375px;
 }
 
 .main-right-block-contacts-information {
@@ -669,16 +669,19 @@ h2 {
 
 .main-right-block-reviews {
     border: 1px solid #c0c0c0;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
     margin: 0 auto;
     height: 240px;
-    width: 375px;
+    max-width: 375px;
 }
 
 .main-right-block-reviews-hidden {
     margin: 5px;
     overflow: auto;
     height: 230px;
-    width: 365px;
+    max-width: 365px;
 }
 
 .reviews-table {
