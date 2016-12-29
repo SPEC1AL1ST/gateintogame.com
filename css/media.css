@@ -1,14 +1,3 @@
-/*@media screen and (max-width: 1086px) {*/
-/*.main-left-block-container,*/
-/*.main-right-block-container {*/
-/*min-height: 1075px;*/
-/*}*/
-
-/*.main-left-block-about-our-shop-container {*/
-/*margin: 10px 5px;*/
-/*}*/
-/*}*/
-
 @media screen and (max-width: 1100px) {
     .layout {
         max-width: 990px;
@@ -30,22 +19,13 @@
         margin-left: 30px;
     }
 
-    .header-container {
-        text-align: center;
-    }
-
-    /** the magic icon trick ! **/
-    [data-icon]:after {
-        left: -80px;
-    }
-
     .header-menu-item {
         font: 700 italic 22px 'Lobster', serif;
     }
 
     .main-left-block-container,
     .main-right-block-container {
-        min-height: 1215px;
+        min-height: 1170px;
     }
 
     .main-left-block-container {
@@ -54,6 +34,15 @@
 
     .main-right-block-container {
         width: 46%;
+    }
+
+    .main-left-block-about-our-shop-container {
+        margin: 10px 5px;
+    }
+
+    .main-left-block-about-our-shop-container-hidden {
+        height: 272px;
+        overflow: auto;
     }
 
     .footer-container {
@@ -71,24 +60,6 @@
         margin: 15px 7px;
     }
 }
-
-/*@media screen and (max-width: 1024px) {*/
-    /*.logo {*/
-        /*margin: 20px 0 0 30px;*/
-    /*}*/
-
-    /*.logo img {*/
-        /*width: 300px;*/
-    /*}*/
-
-    /*.header-login {*/
-        /*margin-right: 30px;*/
-    /*}*/
-
-    /*.form {*/
-        /*margin-left: 30px;*/
-    /*}*/
-/*}*/
 
 @media screen and (max-width: 1000px) {
     .logo {
@@ -115,13 +86,70 @@
     }
 
     .header-container {
-        height: 100px;
+        height: 225px;
+        padding-top: 5px;
+    }
+
+    .logo {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    .logo img {
+        width: 250px;
+    }
+
+    header  {
+        position: relative;
+    }
+
+    .header-login {
+        float: none;
+        text-align: center;
+        margin: 5px auto 10px;
+        max-width: 540px;
+    }
+
+    .form-social-auth-register {
+        font-size: 14px;
+    }
+
+    #wrapper input:not([type="checkbox"]) {
+        width: 82%;
+        padding: 3px 5px 3px 32px;
+    }
+
+    .form {
+        text-align: left;
+        width: 210px;
     }
 
     .sidenav,
     .sidenav-span {
         position: absolute;
         display: block;
+        left: 20px;
+        top: 30px;
+    }
+
+    .sidenav-span {
+        cursor: pointer;
+        color: #faf9f0;
+        font: 400 italic 30px 'Lobster', serif;
+        text-shadow: 1px 1px 2px #000000, 0 0 1em #faf9f0;
+    }
+
+    .sidenav-span:hover {
+        color: #ebeae2;
+        text-shadow: 1px 1px 2px #000000, 0 0 1em #ebeae2;
+    }
+
+    .sidenav-span:active {
+        color: #ebeae2;
+        text-shadow: 1px 1px 2px #000000, 0 0 1em #ebeae2;
+        top: 31px;
     }
 
     .sidenav {
@@ -141,7 +169,8 @@
         padding: 8px 8px 8px 32px;
         text-decoration: none;
         font-size: 18px;
-        color: #818181;
+        /*color: #818181;*/
+        color: #c9c9c9;
         display: block;
         transition: 0.3s
     }
@@ -158,18 +187,15 @@
         margin-left: 50px;
     }
 
-    .logo img {
-        width: 240px;
-    }
-
     .header-menu-container {
         display: none;
     }
 
     .main-left-block-container {
         max-width: 52%;
-        min-height: 1145px;
+        min-height: 1095px;
         width: 52%;
+        clear: both;
     }
 
     .main-left-block-item {
@@ -184,27 +210,42 @@
 
     .main-right-block-container {
         max-width: 48%;
-        min-height: 1145px;
+        min-height: 1095px;
         width: 48%;
     }
 }
-@media screen and (max-width: 810px) {
+
+@media screen and (max-width: 826px) {
     .main-right-block-contacts-information-item {
         font-size: 12px;
     }
 }
-@media screen and (max-width: 780px) {
+
+@media screen and (max-width: 798px) {
     .main-right-block-contacts-information-item {
         font-size: 11px;
     }
 }
+
+@media screen and (max-width: 771px) {
+    .main-right-block-contacts-information {
+        float: none;
+        margin: 0 0 0 9%;
+        min-width: 96px;
+    }
+
+    .main-right-block-contacts-information-item {
+        display: inline-block;
+        width: 45%;
+    }
+
+    #vk_groups {
+        float: none;
+        display: inline-block;
+    }
+}
+
 @media screen and (max-width: 768px) {
-    .main-right-block-contacts {
-        margin: 5px 5px;
-    }
-    .main-right-block-reviews {
-        margin: 5px 5px;
-    }
     .footer-container {
         font: 600 12px 'Times New Roman', serif;
         height: 90px;
@@ -218,22 +259,6 @@
     .footer-buttons-item {
         padding: 0 6px;
     }
-
-}
-@media screen and (max-width: 750px) {
-    .main-right-block-contacts-information {
-        float: none;
-        margin-left: 9%;
-    }
-    .main-right-block-contacts-information-item {
-        display: inline-block;
-        width: 45%;
-    }
-    #vk_groups {
-        float: none;
-        display: inline-block;
-        /*margin-left: 15%;*/
-    }
 }
 
 @media screen and (max-width: 715px) {
@@ -242,40 +267,43 @@
     }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 700px) {
+    .main-left-block-item {
+        margin: 0 0 10px;
+    }
+}
+
+@media screen and (max-width: 660px) {
     .layout {
-        max-width: 350px;
+        width: 350px;
     }
 
     .header-container {
-        height: 245px;
-        text-align: center;
+        height: 120px;
     }
 
     .logo {
         float: none;
-        margin: 0 auto;
+        margin: 25px auto 0;
+        text-align: center;
     }
 
     .logo img {
         width: 280px;
     }
 
-    .header-menu-item {
-        font: 700 italic 26px 'Lobster', serif;
+    .sidenav,
+    .sidenav-span {
+        left: 10px;
+        top: -5px;
     }
 
-    .header-menu-item a {
-        color: #054bcc;
-        text-decoration: none;
+    .sidenav-span:active {
+        top: -4px;
     }
 
-    .header-menu-item a:after {
-        border-bottom: solid 2px #054bcc;
-    }
-
-    .header-menu-list-bottom {
-        margin-top: 0;
+    .header-login {
+        display: none;
     }
 
     .main-left-block-container {
@@ -287,6 +315,10 @@
         max-width: 100%;
         min-height: 0;
         width: 100%;
+    }
+
+    .main-left-block-about-our-shop-container {
+        display: none;
     }
 
     .main-right-block-container {
@@ -304,10 +336,6 @@
         text-align: center;
         width: 340px;
     }
-
-    /*.main-right-block-contacts-information {*/
-        /*margin: 10px 0 0;*/
-    /*}*/
 
     .main-right-block-contacts-information img {
         margin-left: 5px;
@@ -354,5 +382,4 @@
         padding-left: 5px;
         max-width: 195px;
     }
-
 }
