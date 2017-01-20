@@ -522,3 +522,14 @@ p.change_link {
     height: 90px;
     background: transparent;
 }
+
+.form-social-auth-register-text {
+    text-align: center;
+}
+
+.form-social-auth-register-text img {
+    height: 36px;
+    margin: 10px 15px 5px 0;
+    vertical-align: middle;
+    width: 35px;
+}
