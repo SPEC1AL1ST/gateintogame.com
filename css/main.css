@@ -329,8 +329,8 @@ p.change_link a {
     text-align: center;
     border-left: 1px solid #fff;
     border-right: 1px solid #ccc;
-    width: 16.6667%; /* fallback for non-calc() browsers */
-    width: calc(100% / 6);
+    width: 25%; /* fallback for non-calc() browsers */
+    width: calc(100% / 4);
     box-sizing: border-box;
 }
 
