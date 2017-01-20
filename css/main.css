@@ -476,6 +476,7 @@ p.change_link a {
     min-height: 200px;
 }
 
+
 .main-left-block-about-our-shop-container-hidden {
     margin: 5px;
     overflow: auto;
@@ -490,6 +491,16 @@ h1 {
 
 .main-left-block-about-our-shop-text {
     font: 600 normal 14px 'Times New Roman', serif;
+}
+
+.main-left-block-about-game-text {
+    font: 400 normal 14px 'Arial', serif;
+    text-align: justify;
+    text-indent: 5px;
+}
+
+.main-left-block-about-game-name {
+    font: 600 normal 14px 'Arial', serif;
 }
 
 .main-left-block-about-our-shop-warning {
@@ -516,7 +527,7 @@ h1 {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    min-height: 946px;
+    min-height: 1174px;
     text-align: center;
     width: 37%;
 }
