@@ -409,6 +409,7 @@ p.change_link a {
 }
 
 .game-category-item {
+    position: relative;
     border: 3px ridge rgba(255, 255, 255, 0.5);
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -420,6 +421,29 @@ p.change_link a {
     padding: 10px;
     text-align: center;
     width: 190px;
+}
+
+.block-buy {
+    position: absolute;
+    line-height: 25px;
+    text-align: center;
+    left: 50px;
+    bottom: 0;
+    right: 0;
+    top: 95px;
+    background: rgba(50, 255, 63, 0.8);
+    padding: 5px;
+    display: none;
+    width: 100px;
+    height: 25px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.game-category-item:hover .block-buy{
+    display: block;
 }
 
 .game-category-item:hover {
