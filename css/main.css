@@ -408,9 +408,42 @@ p.change_link a {
     max-width: 175px;
 }
 
+.game-category-item {
+    border: 3px ridge rgba(255, 255, 255, 0.5);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    height: 210px;
+    margin: 0 5px 10px;
+    padding: 10px;
+    text-align: center;
+    width: 190px;
+}
+
+.game-category-item:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.game-category-item:active {
+    border: 3px groove rgba(255, 255, 255, 0.5);
+}
+
+.game-category-item img {
+    height: 190px;
+    max-width: 190px;
+}
+
+.game-category-item-description {
+    font: 700 italic 21px 'Lobster', serif;
+    color: #616161;
+    padding: 0;
+    margin: 0;
+}
+
 /*.wow,*/
 /*.archeage,*/
-/*.bless,*/
 /*.revelation,*/
 /*.l2,*/
 /*.l2c,*/
