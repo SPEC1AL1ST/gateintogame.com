@@ -80,217 +80,219 @@
         </div>
     </header>
     <main>
-        <div class="main-left-block-container cf">
-            <h2>Спасибо за покупку!</h2>
-            <div class="success-container">
-                <?php
-                // если переменная uniquecode не передана
-                if (!isset($_GET["uniquecode"])) {
-                    ?>
-                    <p>Переменная <strong>uniquecode</strong> не была задана!</p>
-                <?php } else {
-                    $_GET["uniquecode"] = substr(preg_replace("/[^A-Z0-9]/", "", $_GET["uniquecode"]), 0, 16);
-
-                    // если переменная uniquecode пустая
-                    if (empty($_GET["uniquecode"])) {
+        <div class="main-table-row">
+            <div class="main-left-block-container cf">
+                <h2>Спасибо за покупку!</h2>
+                <div class="success-container">
+                    <?php
+                    // если переменная uniquecode не передана
+                    if (!isset($_GET["uniquecode"])) {
                         ?>
-                        <span class="warning">Ошибка: переменная <strong>uniquecode</strong> не должна быть пустой!</span>
-                    <?php } // если количество символов меньше 16
-                    elseif (strlen($_GET["uniquecode"]) != 16) {
-                        ?>
-                        <span class="warning">Ошибка: переменная <strong>uniquecode</strong> должно содержать 16 символов!</span>
+                        <p>Переменная <strong>uniquecode</strong> не была задана!</p>
                     <?php } else {
-                        require_once "./main.php";
-                        require_once "./config.php";
+                        $_GET["uniquecode"] = substr(preg_replace("/[^A-Z0-9]/", "", $_GET["uniquecode"]), 0, 16);
 
-                        $obj = new check_code;
-                        $sign = md5($id_seller . ":" . $_GET["uniquecode"] . ":" . $pass_DS);
-                        $answer = @$obj->answer_check_code($id_seller, $_GET["uniquecode"], $sign);
+                        // если переменная uniquecode пустая
+                        if (empty($_GET["uniquecode"])) {
+                            ?>
+                            <span class="warning">Ошибка: переменная <strong>uniquecode</strong> не должна быть пустой!</span>
+                        <?php } // если количество символов меньше 16
+                        elseif (strlen($_GET["uniquecode"]) != 16) {
+                            ?>
+                            <span class="warning">Ошибка: переменная <strong>uniquecode</strong> должно содержать 16 символов!</span>
+                        <?php } else {
+                            require_once "./main.php";
+                            require_once "./config.php";
 
-                        $xml_data = @new SimpleXMLElement($answer);
+                            $obj = new check_code;
+                            $sign = md5($id_seller . ":" . $_GET["uniquecode"] . ":" . $pass_DS);
+                            $answer = @$obj->answer_check_code($id_seller, $_GET["uniquecode"], $sign);
 
-                        if (!@$xml_data) {
-                            echo "<span class=\"warning\">Не удается разобрать XML-ответ!</span>\r\n";
-                        } else {
+                            $xml_data = @new SimpleXMLElement($answer);
+
+                            if (!@$xml_data) {
+                                echo "<span class=\"warning\">Не удается разобрать XML-ответ!</span>\r\n";
+                            } else {
 
 // проверяем возвращаемый код(retval). В случае успеха выполняем необходимые действия
-                            /* рекомедуется проверять все полученные параметры ответа, особое внимание стоит обратить на inv.
-                            Настоятельно рекомендуем сохранять это значение в своей базе и каждый раз проверять его на уникальность, чтобы избежать повторного начисления */
-                            if ($xml_data->retval == 0 && $xml_data->unique_code == $_GET["uniquecode"]) {
-                                echo "<br /><fieldset>
+                                /* рекомедуется проверять все полученные параметры ответа, особое внимание стоит обратить на inv.
+                                Настоятельно рекомендуем сохранять это значение в своей базе и каждый раз проверять его на уникальность, чтобы избежать повторного начисления */
+                                if ($xml_data->retval == 0 && $xml_data->unique_code == $_GET["uniquecode"]) {
+                                    echo "<br /><fieldset>
 <legend>Детали платежа</legend>
 <strong>Номер счета</strong>: " . $xml_data->inv . "<br />
 <strong>Дата платежа</strong>: " . $xml_data->date_pay . "<br />
 <strong>Идентификатор товара</strong>: " . $xml_data->id_goods . "<br />
 <strong>Сумма</strong>: " . $xml_data->amount . "<br />
 <strong>Валюта</strong>: " . $xml_data->type_curr . "<br />\r\n";
-                                if (!empty($xml_data->unit_goods) && !empty($xml_data->cnt_goods)) {
-                                    echo "<strong>Единица товара</strong>: " . $xml_data->unit_goods . "<br />
+                                    if (!empty($xml_data->unit_goods) && !empty($xml_data->cnt_goods)) {
+                                        echo "<strong>Единица товара</strong>: " . $xml_data->unit_goods . "<br />
 <strong>Количество единиц товара</strong>: " . $xml_data->cnt_goods . "<br /><br />
                                     <strong>По возможности, пожалуйста, свяжитесь с оператором для уточнения деталей передачи товара</strong><br /><br />
                                     <strong>If possible, please contact your operator for further details of the transfer of goods</strong>\r\n";
+                                    }
+                                    echo "</fieldset>\r\n";
+                                } else {
+                                    echo "<br /><span class=\"warning\">Платеж не найден!</span>\r\n";
                                 }
-                                echo "</fieldset>\r\n";
-                            } else {
-                                echo "<br /><span class=\"warning\">Платеж не найден!</span>\r\n";
                             }
                         }
                     }
-                }
-                ?>
-            </div>
-            <div class="main-left-block-payment-methods-container cf">
-                <h2 class="main-left-block-payment-methods-header cf">Способы оплаты</h2>
-                <div class="main-left-block-payment-methods-item">
-                    <img src="../img/payments/webmoney-white.png" alt="WebMoney" title="WebMoney">
-                    <img src="../img/payments/yandexmoney.png" alt="Яндекс.Деньги" title="Яндекс.Деньги">
-                    <img src="../img/payments/qiwi.png" alt="QIWI" title="QIWI">
-                    <img src="../img/payments/cash_usd.png" alt="Наличные в USD" title="Наличные в USD">
-                    <img src="../img/payments/visa.png" alt="Visa" title="Visa">
-                    <img src="../img/payments/mastercard.png" alt="MasterCard" title="MasterCard">
-                    <img src="../img/payments/maestro.png" alt="Maestro" title="Maestro">
-                    <img src="../img/payments/cash_rub.png" alt="Наличные в RUR" title="Наличные в RUR">
-                    <img src="../img/payments/privatbank.png" alt="ПриватБанк" title="ПриватБанк">
-                    <img src="../img/payments/alfabank-white.png" alt="Альфа-Клик" title="Альфа-Клик">
-                    <img src="../img/payments/raiffeisen.png" alt="Райффайзен" title="Райффайзен">
-                    <img src="../img/payments/cash_uah.png" alt="Наличные в UAH" title="Наличные в UAH">
-                    <img src="../img/payments/sberbank.png" alt="Сбербанк" title="Сбербанк">
-                    <img src="../img/payments/liqpay.png" alt="LiqPay" title="LiqPay">
-                    <img src="../img/payments/paypal.png" alt="PayPal" title="PayPal">
-                    <img src="../img/payments/cash_byr.png" alt="Наличные в BYR" title="Наличные в BYR">
-                    <img src="../img/payments/sms.png" alt="SMS" title="SMS">
-                    <img src="../img/payments/moneybookers.png" alt="MoneyBookers" title="MoneyBookers">
-                    <img src="../img/payments/ukash.png" alt="Ukash" title="Ukash">
-                    <img src="../img/payments/cash_eur.png" alt="Наличные в EUR" title="Наличные в EUR">
+                    ?>
                 </div>
-            </div>
-        </div>
-        <div class="main-right-block-container cf">
-            <div class="main-right-block-contacts-container cf">
-                <h2 class="main-right-block-contacts-header">Контакты</h2>
-                <div class="main-right-block-contacts cf">
-                    <div class="main-right-block-contacts-information cf">
-                        <div class="main-right-block-contacts-information-item">
-                            <img src="../img/icq.png" alt="ICQ" title="ICQ"><span>200685626</span>
-                        </div>
-                        <div class="main-right-block-contacts-information-item">
-                            <img src="../img/skype.png" alt="Skype" title="Skype"><a href="skype:GateIntoGame?chat"
-                                                                                     title="Skype">GateIntoGame</a>
-                        </div>
-                        <div class="main-right-block-contacts-information-item">
-                            <img src="../img/discord.png" alt="Discord" title="Discord"><a
-                                    href="https://discord.gg/jXtcUrW" title="Discord">GateIntoGame</a>
-                        </div>
-                        <div class="main-right-block-contacts-information-item">
-                            <img src="../img/viber.png" alt="Viber" title="Viber"><a href="viber://add?number=380954460599"
-                                                                                     title="Viber">+380954460599</a>
-                        </div>
-                        <div class="main-right-block-contacts-information-item">
-                            <img src="../img/whatsapp.png" alt="WhatsApp" title="WhatsApp"><a
-                                    href="whatsapp://chat?number=380954460599" title="WhatsApp">+380954460599</a>
-                        </div>
-                        <div class="main-right-block-contacts-information-item">
-                            <img src="../img/email.png" alt="E-Mail" title="E-Mail"><a href="mailto:admin@gateintogame.com"
-                                                                                       title="E-Mail">Почта</a>
-                        </div>
-                    </div>
-                    <div id="vk_groups"></div>
-                    <div class="social-likes">
-                        <div class="main-right-block-contacts-social-pages-links">
-                            <h3 class="main-right-block-contacts-social-pages">Наши страницы</h3>
-                            <a href="https://vk.com/gateintogame" target="_blank"><img src="../img/vk_logo.png"
-                                                                                       alt="Страница Вконтакте"
-                                                                                       title="Страница Вконтакте"></a>
-                            <a href="https://www.facebook.com/gateintogame" target="_blank"><img
-                                        src="../img/facebook_logo.png" alt="Страница в Фейсбук" title="Страница в Фейсбук"></a>
-                            <a href="#" target="_blank"><img src="../img/gplus_logo.png" alt="Страница в Google+"
-                                                             title="Страница в Google+"></a>
-                            <a href="#" target="_blank"><img src="../img/classmates_logo.png"
-                                                             alt="Страница в Одноклассниках"
-                                                             title="Страница в Одноклассниках"></a>
-                            <a href="#" target="_blank"><img src="../img/twitter_logo.png"
-                                                             alt="Твиттер"
-                                                             title="Твиттер"></a>
-                        </div>
-                        <h3 class="main-right-block-contacts-social-sharing">Поделиться</h3>
-                        <div class="facebook" title="Поделиться ссылкой на Фейсбуке">Facebook</div>
-                        <div class="mailru" title="Поделиться ссылкой в Моём мире">Мой мир</div>
-                        <div class="vkontakte" title="Поделиться ссылкой во Вконтакте">Вконтакте</div>
-                        <div class="odnoklassniki" title="Поделиться ссылкой в Одноклассниках">Одноклассники</div>
-                        <div class="plusone" title="Поделиться ссылкой в Гугл-плюс">Google+</div>
+                <div class="main-left-block-payment-methods-container cf">
+                    <h2 class="main-left-block-payment-methods-header cf">Способы оплаты</h2>
+                    <div class="main-left-block-payment-methods-item">
+                        <img src="../img/payments/webmoney-white.png" alt="WebMoney" title="WebMoney">
+                        <img src="../img/payments/yandexmoney.png" alt="Яндекс.Деньги" title="Яндекс.Деньги">
+                        <img src="../img/payments/qiwi.png" alt="QIWI" title="QIWI">
+                        <img src="../img/payments/cash_usd.png" alt="Наличные в USD" title="Наличные в USD">
+                        <img src="../img/payments/visa.png" alt="Visa" title="Visa">
+                        <img src="../img/payments/mastercard.png" alt="MasterCard" title="MasterCard">
+                        <img src="../img/payments/maestro.png" alt="Maestro" title="Maestro">
+                        <img src="../img/payments/cash_rub.png" alt="Наличные в RUR" title="Наличные в RUR">
+                        <img src="../img/payments/privatbank.png" alt="ПриватБанк" title="ПриватБанк">
+                        <img src="../img/payments/alfabank-white.png" alt="Альфа-Клик" title="Альфа-Клик">
+                        <img src="../img/payments/raiffeisen.png" alt="Райффайзен" title="Райффайзен">
+                        <img src="../img/payments/cash_uah.png" alt="Наличные в UAH" title="Наличные в UAH">
+                        <img src="../img/payments/sberbank.png" alt="Сбербанк" title="Сбербанк">
+                        <img src="../img/payments/liqpay.png" alt="LiqPay" title="LiqPay">
+                        <img src="../img/payments/paypal.png" alt="PayPal" title="PayPal">
+                        <img src="../img/payments/cash_byr.png" alt="Наличные в BYR" title="Наличные в BYR">
+                        <img src="../img/payments/sms.png" alt="SMS" title="SMS">
+                        <img src="../img/payments/moneybookers.png" alt="MoneyBookers" title="MoneyBookers">
+                        <img src="../img/payments/ukash.png" alt="Ukash" title="Ukash">
+                        <img src="../img/payments/cash_eur.png" alt="Наличные в EUR" title="Наличные в EUR">
                     </div>
                 </div>
             </div>
-            <div class="main-right-block-track-order-container cf">
-                <h2 class="main-right-block-track-order-header">Отследить заказ</h2>
-                <div class="main-right-block-search-box cf">
-                    <form action="#" method="post">
-                        <label>
-                            <input class="main-right-block-search-box-input" type="search" placeholder="Номер заказа">
-                            <input class="main-right-block-search-box-button" type="button" value="Поиск">
-                        </label>
-                    </form>
-                </div>
-            </div>
-            <div class="main-right-block-reviews-container cf">
-                <h2 class="main-right-block-reviews-header">Последние отзывы</h2>
-                <div class="main-right-block-reviews">
-                    <div class="main-right-block-reviews-hidden">
-                        <div class="reviews-table">
-                            <div class="reviews-table-header">
-                                <div class="reviews-table-cell reviews-table-head">Имя</div>
-                                <div class="reviews-table-cell reviews-table-head">Отзыв</div>
+            <div class="main-right-block-container cf">
+                <div class="main-right-block-contacts-container cf">
+                    <h2 class="main-right-block-contacts-header">Контакты</h2>
+                    <div class="main-right-block-contacts cf">
+                        <div class="main-right-block-contacts-information cf">
+                            <div class="main-right-block-contacts-information-item">
+                                <img src="../img/icq.png" alt="ICQ" title="ICQ"><span>200685626</span>
                             </div>
-                            <div class="reviews-table-row-group">
-                                <div class="reviews-table-row">
-                                    <div class="reviews-table-cell reviews-table-name">Дмитрий222222222222222222</div>
-                                    <div class="reviews-table-cell reviews-table-review">Отличный сайт, купил много
-                                        золота
-                                        без проблем1111111111111111111111111111111111 22222222222222
-                                    </div>
-                                </div>
-                                <div class="reviews-table-row">
-                                    <div class="reviews-table-cell reviews-table-name">Дмитрий</div>
-                                    <div class="reviews-table-cell reviews-table-review">Отличный сайт
-                                    </div>
-                                </div>
-                                <div class="reviews-table-row">
-                                    <div class="reviews-table-cell reviews-table-name">Дмитрий</div>
-                                    <div class="reviews-table-cell reviews-table-review">Отличный сайт, купил много
-                                        золота
-                                        без проблем222222222222222222333333333333333333333333
-                                    </div>
-                                </div>
-                                <div class="reviews-table-row">
-                                    <div class="reviews-table-cell reviews-table-name">Дмитрий</div>
-                                    <div class="reviews-table-cell reviews-table-review">Отличный сайт, купил много
-                                        золота
-                                        без проблем
-                                    </div>
-                                </div>
-                                <div class="reviews-table-row">
-                                    <div class="reviews-table-cell reviews-table-name">Дмитрий</div>
-                                    <div class="reviews-table-cell reviews-table-review">Отличный сайт, купил много
-                                        золота
-                                        без проблем
-                                    </div>
-                                </div>
+                            <div class="main-right-block-contacts-information-item">
+                                <img src="../img/skype.png" alt="Skype" title="Skype"><a href="skype:GateIntoGame?chat"
+                                                                                         title="Skype">GateIntoGame</a>
+                            </div>
+                            <div class="main-right-block-contacts-information-item">
+                                <img src="../img/discord.png" alt="Discord" title="Discord"><a
+                                        href="https://discord.gg/jXtcUrW" title="Discord">GateIntoGame</a>
+                            </div>
+                            <div class="main-right-block-contacts-information-item">
+                                <img src="../img/viber.png" alt="Viber" title="Viber"><a href="viber://add?number=380954460599"
+                                                                                         title="Viber">+380954460599</a>
+                            </div>
+                            <div class="main-right-block-contacts-information-item">
+                                <img src="../img/whatsapp.png" alt="WhatsApp" title="WhatsApp"><a
+                                        href="whatsapp://chat?number=380954460599" title="WhatsApp">+380954460599</a>
+                            </div>
+                            <div class="main-right-block-contacts-information-item">
+                                <img src="../img/email.png" alt="E-Mail" title="E-Mail"><a href="mailto:admin@gateintogame.com"
+                                                                                           title="E-Mail">Почта</a>
                             </div>
                         </div>
+                        <div id="vk_groups"></div>
+                        <div class="social-likes">
+                            <div class="main-right-block-contacts-social-pages-links">
+                                <h3 class="main-right-block-contacts-social-pages">Наши страницы</h3>
+                                <a href="https://vk.com/gateintogame" target="_blank"><img src="../img/vk_logo.png"
+                                                                                           alt="Страница Вконтакте"
+                                                                                           title="Страница Вконтакте"></a>
+                                <a href="https://www.facebook.com/gateintogame" target="_blank"><img
+                                            src="../img/facebook_logo.png" alt="Страница в Фейсбук" title="Страница в Фейсбук"></a>
+                                <a href="#" target="_blank"><img src="../img/gplus_logo.png" alt="Страница в Google+"
+                                                                 title="Страница в Google+"></a>
+                                <a href="#" target="_blank"><img src="../img/classmates_logo.png"
+                                                                 alt="Страница в Одноклассниках"
+                                                                 title="Страница в Одноклассниках"></a>
+                                <a href="#" target="_blank"><img src="../img/twitter_logo.png"
+                                                                 alt="Твиттер"
+                                                                 title="Твиттер"></a>
+                            </div>
+                            <h3 class="main-right-block-contacts-social-sharing">Поделиться</h3>
+                            <div class="facebook" title="Поделиться ссылкой на Фейсбуке">Facebook</div>
+                            <div class="mailru" title="Поделиться ссылкой в Моём мире">Мой мир</div>
+                            <div class="vkontakte" title="Поделиться ссылкой во Вконтакте">Вконтакте</div>
+                            <div class="odnoklassniki" title="Поделиться ссылкой в Одноклассниках">Одноклассники</div>
+                            <div class="plusone" title="Поделиться ссылкой в Гугл-плюс">Google+</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-right-block-track-order-container cf">
+                    <h2 class="main-right-block-track-order-header">Отследить заказ</h2>
+                    <div class="main-right-block-search-box cf">
+                        <form action="#" method="post">
+                            <label>
+                                <input class="main-right-block-search-box-input" type="search" placeholder="Номер заказа">
+                                <input class="main-right-block-search-box-button" type="button" value="Поиск">
+                            </label>
+                        </form>
+                    </div>
+                </div>
+                <div class="main-right-block-reviews-container cf">
+                    <h2 class="main-right-block-reviews-header">Последние отзывы</h2>
+                    <div class="main-right-block-reviews">
+                        <div class="main-right-block-reviews-hidden">
+                            <div class="reviews-table">
+                                <div class="reviews-table-header">
+                                    <div class="reviews-table-cell reviews-table-head">Имя</div>
+                                    <div class="reviews-table-cell reviews-table-head">Отзыв</div>
+                                </div>
+                                <div class="reviews-table-row-group">
+                                    <div class="reviews-table-row">
+                                        <div class="reviews-table-cell reviews-table-name">Дмитрий222222222222222222</div>
+                                        <div class="reviews-table-cell reviews-table-review">Отличный сайт, купил много
+                                            золота
+                                            без проблем1111111111111111111111111111111111 22222222222222
+                                        </div>
+                                    </div>
+                                    <div class="reviews-table-row">
+                                        <div class="reviews-table-cell reviews-table-name">Дмитрий</div>
+                                        <div class="reviews-table-cell reviews-table-review">Отличный сайт
+                                        </div>
+                                    </div>
+                                    <div class="reviews-table-row">
+                                        <div class="reviews-table-cell reviews-table-name">Дмитрий</div>
+                                        <div class="reviews-table-cell reviews-table-review">Отличный сайт, купил много
+                                            золота
+                                            без проблем222222222222222222333333333333333333333333
+                                        </div>
+                                    </div>
+                                    <div class="reviews-table-row">
+                                        <div class="reviews-table-cell reviews-table-name">Дмитрий</div>
+                                        <div class="reviews-table-cell reviews-table-review">Отличный сайт, купил много
+                                            золота
+                                            без проблем
+                                        </div>
+                                    </div>
+                                    <div class="reviews-table-row">
+                                        <div class="reviews-table-cell reviews-table-name">Дмитрий</div>
+                                        <div class="reviews-table-cell reviews-table-review">Отличный сайт, купил много
+                                            золота
+                                            без проблем
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="main-bottom-menu-list-container cf">
-            <ul class="main-bottom-menu-list">
-                <li class="main-bottom-menu-list-item"><a href="../guarantee.html">Гарантии</a></li>
-                <li class="main-bottom-menu-list-item"><a href="../payment.html">Оплата</a></li>
-                <li class="main-bottom-menu-list-item"><a href="../supplier.html">Поставщикам</a></li>
-                <li class="main-bottom-menu-list-item"><a href="../guarantor.html">Гарант сделок</a></li>
-                <li class="main-bottom-menu-list-item"><a href="../personal_area.html">Личный кабинет</a></li>
-            </ul>
         </div>
     </main>
+    <div class="footer-bottom-menu-list-container cf">
+        <ul class="footer-bottom-menu-list">
+            <li class="footer-bottom-menu-list-item"><a href="../guarantee.html">Гарантии</a></li>
+            <li class="footer-bottom-menu-list-item"><a href="../payment.html">Оплата</a></li>
+            <li class="footer-bottom-menu-list-item"><a href="../supplier.html">Поставщикам</a></li>
+            <li class="footer-bottom-menu-list-item"><a href="../guarantor.html">Гарант сделок</a></li>
+            <li class="footer-bottom-menu-list-item"><a href="../personal_area.html">Личный кабинет</a></li>
+        </ul>
+    </div>
     <footer>
         <div class="footer-container">
             <p class="footer-copyright">
@@ -320,6 +322,24 @@
         </div>
     </footer>
 </div>
+<!--Google Analytics-->
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-88162574-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
 <!--<script src="js/main.js"></script>-->
 <script src="../js/jquery-3.1.1.min.js"></script>
 <script src="../js/social-likes.min.js"></script>
