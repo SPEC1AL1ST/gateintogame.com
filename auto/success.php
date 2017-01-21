@@ -127,7 +127,8 @@
                                 if (!empty($xml_data->unit_goods) && !empty($xml_data->cnt_goods)) {
                                     echo "<strong>Единица товара</strong>: " . $xml_data->unit_goods . "<br />
 <strong>Количество единиц товара</strong>: " . $xml_data->cnt_goods . "<br /><br />
-                                    <strong>По возможности, пожалуйста, свяжитесь с оператором для возможного уточнения деталей передачи товара</strong>\r\n";
+                                    <strong>По возможности, пожалуйста, свяжитесь с оператором для уточнения деталей передачи товара</strong><br /><br />
+                                    <strong>If possible, please contact your operator for further details of the transfer of goods</strong>\r\n";
                                 }
                                 echo "</fieldset>\r\n";
                             } else {

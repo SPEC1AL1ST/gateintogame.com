@@ -466,6 +466,30 @@ p.change_link a {
     margin: 0;
 }
 
+.guarantee-text {
+    color: #ff8a07;
+    font: 600 italic 22px 'Times New Roman', serif;
+    margin: 5px;
+}
+
+.guarantee-list {
+    margin: 0 10px 10px;
+    text-align: left;
+    list-style-image: url("../img/galochka.png");
+}
+
+.guarantee-list a {
+    color: #000000;
+}
+
+.guarantee-list a:hover {
+    font-weight: bold;
+}
+
+.guarantee-item-bl {
+    font-weight: bold;
+}
+
 /*.wow,*/
 /*.archeage,*/
 /*.revelation,*/
