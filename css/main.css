@@ -510,13 +510,14 @@ main {
 .payment-list-faq a,
 .payment-about a,
 .guarantor-about a,
+.guarantor-about-main a:visited,
 .delivery-about a:visited,
 .guarantor-about a:visited,
 .supplier-about a:visited,
 .payment-list-item a:visited,
 .guarantee-list a:visited,
 .payment-list-faq a:visited,
-.supplier-list-item a:visited{
+.supplier-list-item a:visited {
     color: #000000;
 }
 
@@ -531,6 +532,7 @@ main {
     font-weight: bold;
 }
 
+.guarantor-about-main,
 .delivery-about,
 .guarantor-about,
 .supplier-about,
@@ -540,6 +542,7 @@ main {
     text-align: justify;
 }
 
+.guarantor-about-main a,
 .contacts-about a,
 .delivery-about a,
 .faq-about a,
