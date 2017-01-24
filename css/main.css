@@ -329,8 +329,8 @@ p.change_link a {
     text-align: center;
     border-left: 1px solid #fff;
     border-right: 1px solid #ccc;
-    width: 25%; /* fallback for non-calc() browsers */
-    width: calc(100% / 4);
+    width: 16.6667%; /* fallback for non-calc() browsers */
+    width: calc(100% / 6);
     box-sizing: border-box;
 }
 
@@ -440,17 +440,22 @@ main {
     top: 95px;
     background: rgba(50, 255, 63, 0.8);
     padding: 5px;
-    display: none;
     width: 100px;
     height: 25px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
     font-weight: bold;
+    opacity: 0;
 }
 
 .game-category-item:hover .block-buy{
-    display: block;
+    opacity: 1;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
 }
 
 .game-category-item:hover {
@@ -473,28 +478,48 @@ main {
     margin: 0;
 }
 
-.guarantee-text {
+.guarantee-text,
+.payment-text {
     color: #ff8a07;
     font: 600 italic 22px 'Times New Roman', serif;
     margin: 5px;
 }
 
-.guarantee-list {
+.guarantee-list,
+.payment-list,
+.payment-list-item,
+.payment-list-faq {
     margin: 0 10px 10px;
     text-align: left;
     list-style-image: url("../img/galochka.png");
 }
 
-.guarantee-list a {
+.payment-list-item a,
+.guarantee-list a,
+.payment-list-faq a,
+.payment-about a {
     color: #000000;
 }
 
-.guarantee-list a:hover {
+.payment-list-item a:hover,
+.guarantee-list a:hover,
+.payment-list-faq a:hover {
     font-weight: bold;
 }
 
-.guarantee-item-bl {
+.payment-about {
+    display: block;
+    margin: 10px 25px;
+    text-align: justify;
+}
+
+.guarantee-list-item-bl,
+.payment-about a {
     font-weight: bold;
+}
+
+.payment-list-faq-webmoney {
+    list-style: circle;
 }
 
 /*.wow,*/

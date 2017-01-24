@@ -20,6 +20,8 @@
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a class="header-menu-item-button" href="../guarantee.html">Гарантии</a>
             <a class="header-menu-item-button" href="../payment.html">Оплата</a>
+            <a class="header-menu-item-button" href="../delivery.html">Доставка</a>
+            <a class="header-menu-item-button" href="../faq.html">FAQ</a>
             <a class="header-menu-item-button" href="../supplier.html">Поставщикам</a>
             <a class="header-menu-item-button" href="../guarantor.html">Гарант сделок</a>
             <a class="header-menu-item-button" href="../personal_area.html">Личный кабинет</a>
@@ -74,6 +76,8 @@
             <ul class="header-menu-list">
                 <li class="header-menu-item"><a class="header-menu-item-button" href="../guarantee.html">Гарантии</a></li>
                 <li class="header-menu-item"><a class="header-menu-item-button" href="../payment.html">Оплата</a></li>
+                <li class="header-menu-item"><a class="header-menu-item-button" href="../delivery.html">Доставка</a></li>
+                <li class="header-menu-item"><a class="header-menu-item-button" href="../faq.html">FAQ</a></li>
                 <li class="header-menu-item"><a class="header-menu-item-button" href="../supplier.html">Поставщикам</a></li>
                 <li class="header-menu-item"><a class="header-menu-item-button" href="../guarantor.html">Гарант сделок</a></li>
             </ul>
@@ -128,8 +132,8 @@
                                     if (!empty($xml_data->unit_goods) && !empty($xml_data->cnt_goods)) {
                                         echo "<strong>Единица товара</strong>: " . $xml_data->unit_goods . "<br />
 <strong>Количество единиц товара</strong>: " . $xml_data->cnt_goods . "<br /><br />
-                                    <strong>По возможности, пожалуйста, свяжитесь с оператором для уточнения деталей передачи товара</strong><br /><br />
-                                    <strong>If possible, please contact your operator for further details of the transfer of goods</strong>\r\n";
+                                    <strong>По возможности, пожалуйста, свяжитесь с оператором для уточнения деталей получения товара</strong><br /><br />
+                                    <strong>If possible, please contact the operator for further details of receipt of goods</strong>\r\n";
                                     }
                                     echo "</fieldset>\r\n";
                                 } else {
@@ -160,7 +164,7 @@
                         <img src="../img/payments/paypal.png" alt="PayPal" title="PayPal">
                         <img src="../img/payments/cash_byr.png" alt="Наличные в BYR" title="Наличные в BYR">
                         <img src="../img/payments/sms.png" alt="SMS" title="SMS">
-                        <img src="../img/payments/moneybookers.png" alt="MoneyBookers" title="MoneyBookers">
+                        <img src="../img/payments/moneybookers.png" alt="Skrill" title="Skrill">
                         <img src="../img/payments/ukash.png" alt="Ukash" title="Ukash">
                         <img src="../img/payments/cash_eur.png" alt="Наличные в EUR" title="Наличные в EUR">
                     </div>
@@ -204,7 +208,7 @@
                                                                                            title="Страница Вконтакте"></a>
                                 <a href="https://www.facebook.com/gateintogame" target="_blank"><img
                                             src="../img/facebook_logo.png" alt="Страница в Фейсбук" title="Страница в Фейсбук"></a>
-                                <a href="#" target="_blank"><img src="../img/gplus_logo.png" alt="Страница в Google+"
+                                <a href="https://plus.google.com/u/0/109580880575258917985" target="_blank"><img src="../img/gplus_logo.png" alt="Страница в Google+"
                                                                  title="Страница в Google+"></a>
                                 <a href="#" target="_blank"><img src="../img/classmates_logo.png"
                                                                  alt="Страница в Одноклассниках"
@@ -289,6 +293,8 @@
         <ul class="footer-bottom-menu-list">
             <li class="footer-bottom-menu-list-item"><a href="../guarantee.html">Гарантии</a></li>
             <li class="footer-bottom-menu-list-item"><a href="../payment.html">Оплата</a></li>
+            <li class="footer-bottom-menu-list-item"><a href="../delivery.html">Доставка</a></li>
+            <li class="footer-bottom-menu-list-item"><a href="../faq.html">FAQ</a></li>
             <li class="footer-bottom-menu-list-item"><a href="../supplier.html">Поставщикам</a></li>
             <li class="footer-bottom-menu-list-item"><a href="../guarantor.html">Гарант сделок</a></li>
             <li class="footer-bottom-menu-list-item"><a href="../personal_area.html">Личный кабинет</a></li>
@@ -296,7 +302,7 @@
     </div>
         <div class="footer-container">
             <p class="footer-copyright">
-                © Copyright 2005 -
+                © Copyright 2006 -
                 <time datetime="YYYY">2016,</time>
                 All Rights Reserved
             </p>
