@@ -478,6 +478,13 @@ main {
     margin: 0;
 }
 
+.supplier-list {
+    text-align: left;
+}
+.supplier-list-item {
+    margin: 10px auto;
+}
+
 .guarantee-text,
 .payment-text {
     color: #ff8a07;
@@ -495,6 +502,7 @@ main {
 }
 
 .payment-list-item a,
+.supplier-list-item a,
 .guarantee-list a,
 .payment-list-faq a,
 .payment-about a {
@@ -503,7 +511,8 @@ main {
 
 .payment-list-item a:hover,
 .guarantee-list a:hover,
-.payment-list-faq a:hover {
+.payment-list-faq a:hover,
+.supplier-list-item a:hover {
     font-weight: bold;
 }
 
@@ -653,20 +662,41 @@ h2 {
     margin-top: 6px;
 }
 
-.main-right-block-contacts-information img {
+.main-right-block-contacts-information img,
+.delivery-contacts-information img {
     height: 26px;
     margin: 0 5px 0 10px;
     vertical-align: middle;
     width: 26px;
 }
 
-.main-right-block-contacts-information a {
+.main-right-block-contacts-information a,
+.delivery-contacts-information-item a {
     color: #000000;
     text-decoration: none;
 }
 
 .main-right-block-contacts-information-item:hover {
     font-weight: 600;
+}
+
+.delivery-contacts-information-item a:hover {
+    text-decoration: underline;
+}
+
+.delivery-contacts-information-item img:hover,
+.delivery-contacts-information-item a:hover {
+    -webkit-transform: scale(1.1,1.1);
+    -moz-transform: scale(1.1,1.1);
+    -ms-transform: scale(1.1,1.1);
+    -o-transform: scale(1.1,1.1);
+    transform: scale(1.1,1.1);
+}
+
+.delivery-contacts-information-item {
+    text-align: center;
+    margin: 5px;
+    display: inline-block;
 }
 
 #vk_groups {
