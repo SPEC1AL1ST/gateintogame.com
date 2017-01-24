@@ -485,6 +485,8 @@ main {
     margin: 10px auto;
 }
 
+.supplier-text,
+.guarantor-text,
 .guarantee-text,
 .payment-text {
     color: #ff8a07;
@@ -492,6 +494,7 @@ main {
     margin: 5px;
 }
 
+.delivery-list,
 .guarantee-list,
 .payment-list,
 .payment-list-item,
@@ -505,23 +508,43 @@ main {
 .supplier-list-item a,
 .guarantee-list a,
 .payment-list-faq a,
-.payment-about a {
+.payment-about a,
+.guarantor-about a,
+.delivery-about a:visited,
+.guarantor-about a:visited,
+.supplier-about a:visited,
+.payment-list-item a:visited,
+.guarantee-list a:visited,
+.payment-list-faq a:visited,
+.supplier-list-item a:visited{
     color: #000000;
 }
 
+.delivery-about-item a:hover,
+.guarantor-about-item a:hover,
+.guarantor-about a:hover,
+.supplier-about-item a:hover,
 .payment-list-item a:hover,
-.guarantee-list a:hover,
+.guarantee-list-item a:hover,
 .payment-list-faq a:hover,
 .supplier-list-item a:hover {
     font-weight: bold;
 }
 
+.delivery-about,
+.guarantor-about,
+.supplier-about,
 .payment-about {
     display: block;
     margin: 10px 25px;
     text-align: justify;
 }
 
+.contacts-about a,
+.delivery-about a,
+.faq-about a,
+.guarantee-about a,
+.supplier-about a,
 .guarantee-list-item-bl,
 .payment-about a {
     font-weight: bold;
