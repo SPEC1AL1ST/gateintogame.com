@@ -557,6 +557,10 @@ main {
     list-style: circle;
 }
 
+.contacts-container {
+    text-align: center;
+}
+
 /*.wow,*/
 /*.archeage,*/
 /*.revelation,*/
