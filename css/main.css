@@ -505,12 +505,14 @@ main {
     list-style-image: url("../img/galochka.png");
 }
 
+.delivery-list-item a,
 .payment-list-item a,
 .supplier-list-item a,
 .guarantee-list a,
 .payment-list-faq a,
 .payment-about a,
 .guarantor-about a,
+.delivery-list-item a:visited,
 .guarantor-about-main a:visited,
 .delivery-about a:visited,
 .guarantor-about a:visited,
@@ -522,6 +524,7 @@ main {
     color: #000000;
 }
 
+.delivery-list-item a:hover,
 .delivery-about-item a:hover,
 .guarantor-about-item a:hover,
 .guarantor-about a:hover,
