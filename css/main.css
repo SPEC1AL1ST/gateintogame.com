@@ -368,6 +368,7 @@ p.change_link a {
 
 main {
     display: table;
+    width: 100%;
 }
 
 .main-table-row {
@@ -384,7 +385,7 @@ main {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     display: table-cell;
-    max-width: 63%;
+    width: 63%;
     text-align: center;
 }
 
