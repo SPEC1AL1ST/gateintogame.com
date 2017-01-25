@@ -485,6 +485,7 @@ main {
     margin: 10px auto;
 }
 
+.goods-delivery,
 .supplier-text,
 .guarantor-text,
 .guarantee-text,
@@ -532,6 +533,7 @@ main {
     font-weight: bold;
 }
 
+.goods-delivery,
 .guarantor-about-main,
 .delivery-about,
 .guarantor-about,
@@ -542,6 +544,7 @@ main {
     text-align: justify;
 }
 
+.goods-warning strong,
 .guarantor-about-main a,
 .contacts-about a,
 .delivery-about a,
@@ -557,6 +560,8 @@ main {
     list-style: circle;
 }
 
+.goods-warning,
+.goods-delivery,
 .contacts-container {
     text-align: center;
 }
