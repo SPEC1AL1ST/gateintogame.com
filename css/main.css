@@ -46,6 +46,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: Lobster;
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/Lobster-Regular.ttf) format("truetype");
+}
+
 body {
     background: url("../img/bg.jpg") scroll;
 }
@@ -329,8 +336,8 @@ p.change_link a {
     text-align: center;
     border-left: 1px solid #fff;
     border-right: 1px solid #ccc;
-    width: 16.6667%; /* fallback for non-calc() browsers */
     width: calc(100% / 6);
+    width: 16.6667%; /* fallback for non-calc() browsers */
     box-sizing: border-box;
 }
 
