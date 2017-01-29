@@ -5,12 +5,12 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Сервис по продаже внутриигровых ценностей и валют, а также оказанию различного вида услуг в онлайн играх жанра MMORPG.">
+    <meta name="Keywords" content="online, mmorpg, bless, wow, eve online, aion, swtor, tera l2, lineage, gold, золото, кинары, серебро, голд, иски, isk, купить иски, купить голд, купить золото, продать голд, продать голд блесс, продать иски, продать isk, продать голд вов, купить голд блесс, купить голд вов, купить иски ив онлайн, купить isk, внутриигровая валюта, онлайн игры, прокачка, гарант, сделка, гейтинтогейм">
     <link href="../favicon.ico" rel="shortcut icon" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <link href="../css/normalize.css" rel="stylesheet">
     <link href="../css/social-likes_birman.css" rel="stylesheet">
     <link href="../css/main.css" rel="stylesheet">
-    <link href="../css/media.css" rel="stylesheet">
     <title>GateIntoGame - Детали платежа</title>
 </head>
 <body>
@@ -208,12 +208,12 @@
                                                                                            title="Страница Вконтакте"></a>
                                 <a href="https://www.facebook.com/gateintogame" target="_blank"><img
                                             src="../img/facebook_logo.png" alt="Страница в Фейсбук" title="Страница в Фейсбук"></a>
-                                <a href="https://plus.google.com/u/0/109580880575258917985" target="_blank"><img src="../img/gplus_logo.png" alt="Страница в Google+"
+                                <a href="https://plus.google.com/+Gateintogame" target="_blank"><img src="../img/gplus_logo.png" alt="Страница в Google+"
                                                                  title="Страница в Google+"></a>
-                                <a href="#" target="_blank"><img src="../img/classmates_logo.png"
+                                <a href="https://ok.ru/group/58211336454193" target="_blank"><img src="../img/classmates_logo.png"
                                                                  alt="Страница в Одноклассниках"
                                                                  title="Страница в Одноклассниках"></a>
-                                <a href="#" target="_blank"><img src="../img/twitter_logo.png"
+                                <a href="https://twitter.com/GateIntoGame" target="_blank"><img src="../img/twitter_logo.png"
                                                                  alt="Твиттер"
                                                                  title="Твиттер"></a>
                             </div>

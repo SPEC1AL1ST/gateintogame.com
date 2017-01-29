@@ -979,3 +979,380 @@ footer {
     vertical-align: top;
     width: 32%;
 }
+
+@media screen and (max-width: 1100px) {
+    .layout {
+        max-width: 990px;
+    }
+
+    .logo {
+        margin: 20px 0 0 30px;
+    }
+
+    .logo img {
+        width: 300px;
+    }
+
+    .header-login {
+        margin-right: 30px;
+    }
+
+    .form {
+        margin-left: 30px;
+    }
+
+    .header-menu-item {
+        font: 700 italic 22px 'Lobster', serif;
+    }
+
+    .main-left-block-container {
+        width: 54%;
+    }
+
+    .main-right-block-container {
+        width: 46%;
+    }
+
+    .main-left-block-about-our-shop-container {
+        margin: 10px 5px;
+    }
+
+    .main-left-block-about-our-shop-container-hidden {
+        height: 272px;
+        overflow: auto;
+    }
+
+    .footer-container {
+        font: 600 14px 'Times New Roman', serif;
+    }
+
+    .footer-copyright,
+    .footer-tagline,
+    .footer-buttons {
+        width: 30%;
+    }
+
+    .footer-copyright,
+    .footer-tagline {
+        margin: 15px 7px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .logo {
+        margin: 20px 0 0 10px;
+    }
+
+    .logo img {
+        width: 300px;
+    }
+
+    .header-login {
+        margin-right: 10px;
+    }
+
+    .form {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .layout {
+        max-width: 880px;
+        padding: 5px;
+    }
+
+    .header-container {
+        height: 225px;
+        padding-top: 5px;
+    }
+
+    .logo {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    .logo img {
+        width: 250px;
+    }
+
+    header  {
+        position: relative;
+    }
+
+    .header-login {
+        float: none;
+        text-align: center;
+        margin: 5px auto 10px;
+        max-width: 540px;
+    }
+
+    .form-social-auth-register {
+        font-size: 14px;
+    }
+
+    #wrapper input:not([type="checkbox"]) {
+        width: 82%;
+        padding: 3px 5px 3px 32px;
+    }
+
+    .form {
+        text-align: left;
+        width: 210px;
+    }
+
+    .sidenav,
+    .sidenav-span {
+        position: absolute;
+        display: block;
+        left: 20px;
+        top: 30px;
+    }
+
+    .sidenav-span {
+        cursor: pointer;
+        color: #faf9f0;
+        font: 400 italic 30px 'Lobster', serif;
+        text-shadow: 1px 1px 2px #000000, 0 0 1em #faf9f0;
+    }
+
+    .sidenav-span:hover {
+        color: #ebeae2;
+        text-shadow: 1px 1px 2px #000000, 0 0 1em #ebeae2;
+    }
+
+    .sidenav-span:active {
+        color: #ebeae2;
+        text-shadow: 1px 1px 2px #000000, 0 0 1em #ebeae2;
+        top: 31px;
+    }
+
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background: rgba(1, 1, 1, 0.8);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 18px;
+        /*color: #818181;*/
+        color: #c9c9c9;
+        display: block;
+        transition: 0.3s
+    }
+
+    .sidenav a:hover, .offcanvas a:focus {
+        color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    .header-menu-container {
+        display: none;
+    }
+
+    .main-left-block-container {
+        max-width: 52%;
+        width: 52%;
+        clear: both;
+    }
+
+    .main-left-block-item {
+        height: 45px;
+        width: 135px;
+    }
+
+    .main-left-block-item img {
+        height: 50px;
+        max-width: 130px;
+    }
+
+    .main-right-block-container {
+        max-width: 48%;
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 826px) {
+    .main-right-block-contacts-information-item {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 798px) {
+    .main-right-block-contacts-information-item {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 771px) {
+    .main-right-block-contacts-information {
+        float: none;
+        margin: 0 0 0 9%;
+        min-width: 96px;
+    }
+
+    .main-right-block-contacts-information-item {
+        display: inline-block;
+        width: 45%;
+    }
+
+    #vk_groups {
+        float: none;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer-container {
+        font: 600 12px 'Times New Roman', serif;
+        height: 90px;
+    }
+
+    .footer-buttons {
+        margin: 0 auto;
+        height: 70px;
+    }
+
+    .footer-buttons-item {
+        padding: 0 6px;
+    }
+}
+
+@media screen and (max-width: 715px) {
+    .footer-emoney-title {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .main-left-block-item {
+        margin: 0 0 10px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .layout {
+        width: 350px;
+    }
+
+    .header-container {
+        height: 120px;
+    }
+
+    .logo {
+        float: none;
+        margin: 25px auto 0;
+        text-align: center;
+    }
+
+    .logo img {
+        width: 280px;
+    }
+
+    .sidenav,
+    .sidenav-span {
+        left: 10px;
+        top: -5px;
+    }
+
+    .sidenav-span:active {
+        top: -4px;
+    }
+
+    .header-login {
+        display: none;
+    }
+
+    .main-left-block-container {
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        display: block;
+        max-width: 100%;
+        min-height: 0;
+        width: 100%;
+    }
+
+    .main-left-block-about-our-shop-container {
+        display: none;
+    }
+
+    .main-right-block-container {
+        -webkit-border-radius: 10px 10px 0 0;
+        -moz-border-radius: 10px 10px 0 0;
+        border-radius: 10px 10px 0 0;
+        display: block;
+        max-width: 100%;
+        min-height: 0;
+        width: 100%;
+    }
+
+    .main-right-block-contacts {
+        text-align: center;
+        width: 340px;
+    }
+
+    .main-right-block-contacts-information img {
+        margin-left: 5px;
+    }
+
+    .main-right-block-contacts-information-item {
+        font-size: 11px;
+    }
+
+    #vk_groups {
+        margin-right: 0;
+    }
+
+    .main-left-block-payment-methods-container {
+        display: none;
+    }
+
+    .main-left-block-item {
+        height: 45px;
+        width: 135px;
+    }
+
+    .main-left-block-item img {
+        height: 50px;
+        max-width: 130px;
+    }
+
+    .main-right-block-track-order-container {
+        display: none;
+    }
+
+    .main-right-block-reviews {
+        border: 1px solid #c0c0c0;
+        margin: 0 auto;
+        height: 240px;
+        width: 340px;
+    }
+
+    .main-right-block-reviews-hidden {
+        width: 330px;
+    }
+
+    .reviews-table-review {
+        padding-left: 5px;
+        max-width: 195px;
+    }
+}
