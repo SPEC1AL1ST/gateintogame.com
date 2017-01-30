@@ -208,54 +208,54 @@
                         </form>
                     </div>
                 </div>
-                <div class="main-right-block-reviews-container cf">
-                    <h2 class="main-right-block-reviews-header">Последние отзывы</h2>
-                    <div class="main-right-block-reviews">
-                        <div class="main-right-block-reviews-hidden">
-                            <div class="reviews-table">
-                                <div class="reviews-table-header">
-                                    <div class="reviews-table-cell reviews-table-head">Имя</div>
-                                    <div class="reviews-table-cell reviews-table-head">Отзыв</div>
-                                </div>
-                                <div class="reviews-table-row-group">
-                                    <div class="reviews-table-row">
-                                        <div class="reviews-table-cell reviews-table-name">Дмитрий222222222222222222</div>
-                                        <div class="reviews-table-cell reviews-table-review">Отличный сайт, купил много
-                                            золота
-                                            без проблем1111111111111111111111111111111111 22222222222222
-                                        </div>
-                                    </div>
-                                    <div class="reviews-table-row">
-                                        <div class="reviews-table-cell reviews-table-name">Дмитрий</div>
-                                        <div class="reviews-table-cell reviews-table-review">Отличный сайт
-                                        </div>
-                                    </div>
-                                    <div class="reviews-table-row">
-                                        <div class="reviews-table-cell reviews-table-name">Дмитрий</div>
-                                        <div class="reviews-table-cell reviews-table-review">Отличный сайт, купил много
-                                            золота
-                                            без проблем222222222222222222333333333333333333333333
-                                        </div>
-                                    </div>
-                                    <div class="reviews-table-row">
-                                        <div class="reviews-table-cell reviews-table-name">Дмитрий</div>
-                                        <div class="reviews-table-cell reviews-table-review">Отличный сайт, купил много
-                                            золота
-                                            без проблем
-                                        </div>
-                                    </div>
-                                    <div class="reviews-table-row">
-                                        <div class="reviews-table-cell reviews-table-name">Дмитрий</div>
-                                        <div class="reviews-table-cell reviews-table-review">Отличный сайт, купил много
-                                            золота
-                                            без проблем
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <!--<div class="main-right-block-reviews-container cf">-->
+                    <!--<h2 class="main-right-block-reviews-header">Последние отзывы</h2>-->
+                    <!--<div class="main-right-block-reviews">-->
+                        <!--<div class="main-right-block-reviews-hidden">-->
+                            <!--<div class="reviews-table">-->
+                                <!--<div class="reviews-table-header">-->
+                                    <!--<div class="reviews-table-cell reviews-table-head">Дата</div>-->
+                                    <!--<div class="reviews-table-cell reviews-table-head">Отзыв</div>-->
+                                <!--</div>-->
+                                <!--<div class="reviews-table-row-group">-->
+                                    <!--<?php-->
+                                    <!--$url = 'https://shop.digiseller.ru/xml/shop_reviews.asp';-->
+                                    <!--$xml = '-->
+                                    <!--<digiseller.request>-->
+                                    <!--<seller>-->
+                                        <!--<id>43447</id>-->
+                                    <!--</seller>-->
+                                    <!--<product>-->
+                                        <!--<id>970356</id>-->
+                                    <!--</product>-->
+                                    <!--<reviews>-->
+                                        <!--<type>all</type>-->
+                                    <!--</reviews>-->
+                                    <!--<pages>-->
+                                        <!--<rows>10</rows>-->
+                                    <!--</pages>-->
+                                    <!--</digiseller.request>';-->
+
+                                    <!--$ch = curl_init($url);-->
+
+                                    <!--curl_setopt($ch, CURLOPT_POST, 1);-->
+                                    <!--curl_setopt($ch, CURLOPT_POSTFIELDS, $xml);-->
+                                    <!--curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);-->
+
+                                    <!--$response = curl_exec($ch);-->
+                                    <!--curl_close($ch);-->
+
+                                    <!--$doc = new DOMDocument();-->
+                                    <!--$doc->loadXML($response);-->
+
+                                    <!--$reviews = $doc->getElementsByTagName("reviews");-->
+                                    <!--?>-->
+                                    <!--<?php  require ('auto/reviews.php')  ?>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
             </div>
         </div>
     </main>
