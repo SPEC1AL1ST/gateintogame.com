@@ -18,13 +18,13 @@
     <header>
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a class="header-menu-item-button" href="guarantee.html">Гарантии</a>
-            <a class="header-menu-item-button" href="payment.html">Оплата / FAQ</a>
-            <a class="header-menu-item-button" href="delivery.html">Доставка</a>
-            <a class="header-menu-item-button" href="faq.html">FAQ</a>
-            <a class="header-menu-item-button" href="supplier.html">Поставщикам</a>
-            <a class="header-menu-item-button" href="guarantor.html">Гарант сделок</a>
-            <a class="header-menu-item-button" href="personal_area.html">Личный кабинет</a>
+            <a class="header-menu-item-button" href="guarantee.php">Гарантии</a>
+            <a class="header-menu-item-button" href="payment.php">Оплата / FAQ</a>
+            <a class="header-menu-item-button" href="delivery.php">Доставка</a>
+            <a class="header-menu-item-button" href="faq.php">FAQ</a>
+            <a class="header-menu-item-button" href="supplier.php">Поставщикам</a>
+            <a class="header-menu-item-button" href="guarantor.php">Гарант сделок</a>
+            <a class="header-menu-item-button" href="personal_area.php">Личный кабинет</a>
         </div>
         <span class="sidenav-span" onclick="openNav()">&#9776; Меню</span>
         <div class="header-container cf">
@@ -74,12 +74,12 @@
         </div>
         <div class="header-menu-container">
             <ul class="header-menu-list">
-                <li class="header-menu-item"><a class="header-menu-item-button" href="guarantee.html">Гарантии</a></li>
-                <li class="header-menu-item"><a class="header-menu-item-button" href="payment.html">Оплата</a></li>
-                <li class="header-menu-item"><a class="header-menu-item-button" href="delivery.html">Доставка</a></li>
-                <li class="header-menu-item"><a class="header-menu-item-button" href="faq.html">FAQ</a></li>
-                <li class="header-menu-item"><a class="header-menu-item-button" href="supplier.html">Поставщикам</a></li>
-                <li class="header-menu-item"><a class="header-menu-item-button" href="guarantor.html">Гарант сделок</a></li>
+                <li class="header-menu-item"><a class="header-menu-item-button" href="guarantee.php">Гарантии</a></li>
+                <li class="header-menu-item"><a class="header-menu-item-button" href="payment.php">Оплата</a></li>
+                <li class="header-menu-item"><a class="header-menu-item-button" href="delivery.php">Доставка</a></li>
+                <li class="header-menu-item"><a class="header-menu-item-button" href="faq.php">FAQ</a></li>
+                <li class="header-menu-item"><a class="header-menu-item-button" href="supplier.php">Поставщикам</a></li>
+                <li class="header-menu-item"><a class="header-menu-item-button" href="guarantor.php">Гарант сделок</a></li>
             </ul>
         </div>
     </header>
@@ -93,7 +93,7 @@
                     <ul class="payment-list">
                         <li class="payment-list-item">После того, как выбрали игру и интересующий Вас в ней товар - нажмите на картинку с надписью Купить. Вы попадете на страницу выбора количества товара, системы оплаты и дополнительных параметров.
                         </li>
-                        <li class="payment-list-item">Введите количество товара, которое Вам необходимо, метод оплаты и доставки (подробнее о методах дооставки Вы можете прочесть на <a href="delivery.html">этой странице</a>. Далее введите свой e-mail для начисления накопительной скидки и нажмите Продолжить.
+                        <li class="payment-list-item">Введите количество товара, которое Вам необходимо, метод оплаты и доставки (подробнее о методах дооставки Вы можете прочесть на <a href="delivery.php">этой странице</a>. Далее введите свой e-mail для начисления накопительной скидки и нажмите Продолжить.
                         </li>
                         <li class="payment-list-item">Оплатите товар согласно дальнейшим инструкциям в браузере, после чего Вас должно перенаправить на страницу с Деталями платежа (<a href="https://gateintogame.com/auto/success.php?uniquecode=AE42AFF1D49A4F70">пример</a>)
                         </li>
@@ -201,43 +201,43 @@
                         <div class="main-right-block-reviews-hidden">
                             <div class="reviews-table">
                                 <div class="reviews-table-header">
-                                    <div class="reviews-table-cell reviews-table-head">Имя</div>
+                                    <div class="reviews-table-cell reviews-table-head">Дата</div>
                                     <div class="reviews-table-cell reviews-table-head">Отзыв</div>
                                 </div>
                                 <div class="reviews-table-row-group">
-                                    <div class="reviews-table-row">
-                                        <div class="reviews-table-cell reviews-table-name">Дмитрий222222222222222222</div>
-                                        <div class="reviews-table-cell reviews-table-review">Отличный сайт, купил много
-                                            золота
-                                            без проблем1111111111111111111111111111111111 22222222222222
-                                        </div>
-                                    </div>
-                                    <div class="reviews-table-row">
-                                        <div class="reviews-table-cell reviews-table-name">Дмитрий</div>
-                                        <div class="reviews-table-cell reviews-table-review">Отличный сайт
-                                        </div>
-                                    </div>
-                                    <div class="reviews-table-row">
-                                        <div class="reviews-table-cell reviews-table-name">Дмитрий</div>
-                                        <div class="reviews-table-cell reviews-table-review">Отличный сайт, купил много
-                                            золота
-                                            без проблем222222222222222222333333333333333333333333
-                                        </div>
-                                    </div>
-                                    <div class="reviews-table-row">
-                                        <div class="reviews-table-cell reviews-table-name">Дмитрий</div>
-                                        <div class="reviews-table-cell reviews-table-review">Отличный сайт, купил много
-                                            золота
-                                            без проблем
-                                        </div>
-                                    </div>
-                                    <div class="reviews-table-row">
-                                        <div class="reviews-table-cell reviews-table-name">Дмитрий</div>
-                                        <div class="reviews-table-cell reviews-table-review">Отличный сайт, купил много
-                                            золота
-                                            без проблем
-                                        </div>
-                                    </div>
+                                    <?php
+                                    $url = 'https://shop.digiseller.ru/xml/shop_reviews.asp';
+                                    $xml = '
+                                    <digiseller.request>
+                                    <seller>
+                                        <id>43447</id>
+                                    </seller>
+                                    <product>
+                                        <id></id>
+                                    </product>
+                                    <reviews>
+                                        <type>all</type>
+                                    </reviews>
+                                    <pages>
+                                        <rows>15</rows>
+                                    </pages>
+                                    </digiseller.request>';
+
+                                    $ch = curl_init($url);
+
+                                    curl_setopt($ch, CURLOPT_POST, 1);
+                                    curl_setopt($ch, CURLOPT_POSTFIELDS, $xml);
+                                    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+                                    $response = curl_exec($ch);
+                                    curl_close($ch);
+
+                                    $doc = new DOMDocument();
+                                    $doc->loadXML($response);
+
+                                    $reviews = $doc->getElementsByTagName("reviews");
+                                    ?>
+                                    <?php  require ('auto/reviews.php')  ?>
                                 </div>
                             </div>
                         </div>
@@ -249,13 +249,13 @@
     <footer>
         <div class="footer-bottom-menu-list-container cf">
             <ul class="footer-bottom-menu-list">
-                <li class="footer-bottom-menu-list-item"><a href="guarantee.html">Гарантии</a></li>
-                <li class="footer-bottom-menu-list-item"><a href="payment.html">Оплата</a></li>
-                <li class="footer-bottom-menu-list-item"><a href="delivery.html">Доставка</a></li>
-                <li class="footer-bottom-menu-list-item"><a href="faq.html">FAQ</a></li>
-                <li class="footer-bottom-menu-list-item"><a href="supplier.html">Поставщикам</a></li>
-                <li class="footer-bottom-menu-list-item"><a href="guarantor.html">Гарант сделок</a></li>
-                <li class="footer-bottom-menu-list-item"><a href="personal_area.html">Личный кабинет</a></li>
+                <li class="footer-bottom-menu-list-item"><a href="guarantee.php">Гарантии</a></li>
+                <li class="footer-bottom-menu-list-item"><a href="payment.php">Оплата</a></li>
+                <li class="footer-bottom-menu-list-item"><a href="delivery.php">Доставка</a></li>
+                <li class="footer-bottom-menu-list-item"><a href="faq.php">FAQ</a></li>
+                <li class="footer-bottom-menu-list-item"><a href="supplier.php">Поставщикам</a></li>
+                <li class="footer-bottom-menu-list-item"><a href="guarantor.php">Гарант сделок</a></li>
+                <li class="footer-bottom-menu-list-item"><a href="personal_area.php">Личный кабинет</a></li>
             </ul>
         </div>
         <div class="footer-container">

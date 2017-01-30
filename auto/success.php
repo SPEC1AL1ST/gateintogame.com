@@ -18,13 +18,13 @@
     <header>
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a class="header-menu-item-button" href="../guarantee.html">Гарантии</a>
-            <a class="header-menu-item-button" href="../payment.html">Оплата</a>
-            <a class="header-menu-item-button" href="../delivery.html">Доставка</a>
-            <a class="header-menu-item-button" href="../faq.html">FAQ</a>
-            <a class="header-menu-item-button" href="../supplier.html">Поставщикам</a>
-            <a class="header-menu-item-button" href="../guarantor.html">Гарант сделок</a>
-            <a class="header-menu-item-button" href="../personal_area.html">Личный кабинет</a>
+            <a class="header-menu-item-button" href="../guarantee.php">Гарантии</a>
+            <a class="header-menu-item-button" href="../payment.php">Оплата</a>
+            <a class="header-menu-item-button" href="../delivery.php">Доставка</a>
+            <a class="header-menu-item-button" href="../faq.php">FAQ</a>
+            <a class="header-menu-item-button" href="../supplier.php">Поставщикам</a>
+            <a class="header-menu-item-button" href="../guarantor.php">Гарант сделок</a>
+            <a class="header-menu-item-button" href="../personal_area.php">Личный кабинет</a>
         </div>
         <span class="sidenav-span" onclick="openNav()">&#9776; Меню</span>
         <div class="header-container cf">
@@ -74,12 +74,12 @@
         </div>
         <div class="header-menu-container">
             <ul class="header-menu-list">
-                <li class="header-menu-item"><a class="header-menu-item-button" href="../guarantee.html">Гарантии</a></li>
-                <li class="header-menu-item"><a class="header-menu-item-button" href="../payment.html">Оплата</a></li>
-                <li class="header-menu-item"><a class="header-menu-item-button" href="../delivery.html">Доставка</a></li>
-                <li class="header-menu-item"><a class="header-menu-item-button" href="../faq.html">FAQ</a></li>
-                <li class="header-menu-item"><a class="header-menu-item-button" href="../supplier.html">Поставщикам</a></li>
-                <li class="header-menu-item"><a class="header-menu-item-button" href="../guarantor.html">Гарант сделок</a></li>
+                <li class="header-menu-item"><a class="header-menu-item-button" href="../guarantee.php">Гарантии</a></li>
+                <li class="header-menu-item"><a class="header-menu-item-button" href="../payment.php">Оплата</a></li>
+                <li class="header-menu-item"><a class="header-menu-item-button" href="../delivery.php">Доставка</a></li>
+                <li class="header-menu-item"><a class="header-menu-item-button" href="../faq.php">FAQ</a></li>
+                <li class="header-menu-item"><a class="header-menu-item-button" href="../supplier.php">Поставщикам</a></li>
+                <li class="header-menu-item"><a class="header-menu-item-button" href="../guarantor.php">Гарант сделок</a></li>
             </ul>
         </div>
     </header>
@@ -132,8 +132,10 @@
                                     if (!empty($xml_data->unit_goods) && !empty($xml_data->cnt_goods)) {
                                         echo "<strong>Единица товара</strong>: " . $xml_data->unit_goods . "<br />
 <strong>Количество единиц товара</strong>: " . $xml_data->cnt_goods . "<br /><br />
-                                    <strong>По возможности, пожалуйста, свяжитесь с оператором для уточнения деталей получения товара</strong><br /><br />
-                                    <strong>If possible, please contact the operator for further details of receipt of goods</strong>\r\n";
+                                    <strong>По возможности, пожалуйста, свяжитесь с оператором для уточнения деталей получения товара.</strong><br />
+                                    <span class=\"please-leave-review\"><strong>После получения заказа просим залогиниться на <a href='//oplata.info'>www.oplata.info</a> и оставить отзыв о покупке!</strong></span><br /><br />
+                                    <strong>If possible, please contact the operator for further details of receipt of goods.</strong><br />
+                                    <span class=\"please-leave-review\"><strong>After receiving the order, please login at the <a href='//oplata.info'>www.oplata.info</a> and give feedback on the purchase!</strong></span>\r\n";
                                     }
                                     echo "</fieldset>\r\n";
                                 } else {
@@ -291,13 +293,13 @@
     <footer>
     <div class="footer-bottom-menu-list-container cf">
         <ul class="footer-bottom-menu-list">
-            <li class="footer-bottom-menu-list-item"><a href="../guarantee.html">Гарантии</a></li>
-            <li class="footer-bottom-menu-list-item"><a href="../payment.html">Оплата</a></li>
-            <li class="footer-bottom-menu-list-item"><a href="../delivery.html">Доставка</a></li>
-            <li class="footer-bottom-menu-list-item"><a href="../faq.html">FAQ</a></li>
-            <li class="footer-bottom-menu-list-item"><a href="../supplier.html">Поставщикам</a></li>
-            <li class="footer-bottom-menu-list-item"><a href="../guarantor.html">Гарант сделок</a></li>
-            <li class="footer-bottom-menu-list-item"><a href="../personal_area.html">Личный кабинет</a></li>
+            <li class="footer-bottom-menu-list-item"><a href="../guarantee.php">Гарантии</a></li>
+            <li class="footer-bottom-menu-list-item"><a href="../payment.php">Оплата</a></li>
+            <li class="footer-bottom-menu-list-item"><a href="../delivery.php">Доставка</a></li>
+            <li class="footer-bottom-menu-list-item"><a href="../faq.php">FAQ</a></li>
+            <li class="footer-bottom-menu-list-item"><a href="../supplier.php">Поставщикам</a></li>
+            <li class="footer-bottom-menu-list-item"><a href="../guarantor.php">Гарант сделок</a></li>
+            <li class="footer-bottom-menu-list-item"><a href="../personal_area.php">Личный кабинет</a></li>
         </ul>
     </div>
         <div class="footer-container">

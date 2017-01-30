@@ -885,6 +885,22 @@ h2 {
     max-width: 225px;
 }
 
+.please-leave-review {
+    color: #167a1b;
+}
+
+.please-leave-review a {
+    text-decoration: none;
+}
+
+.please-leave-review a:hover {
+    text-decoration: underline;
+}
+
+.please-leave-review a:visited {
+    color: #000000;
+}
+
 footer {
     clear: both;
 }

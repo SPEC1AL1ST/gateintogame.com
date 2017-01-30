@@ -11,20 +11,20 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/social-likes_birman.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
-    <title>GateIntoGame - Доставка</title>
+    <title>GateIntoGame - FAQ</title>
 </head>
 <body>
 <div class="layout">
     <header>
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a class="header-menu-item-button" href="guarantee.html">Гарантии</a>
-            <a class="header-menu-item-button" href="payment.html">Оплата / FAQ</a>
-            <a class="header-menu-item-button" href="delivery.html">Доставка</a>
-            <a class="header-menu-item-button" href="faq.html">FAQ</a>
-            <a class="header-menu-item-button" href="supplier.html">Поставщикам</a>
-            <a class="header-menu-item-button" href="guarantor.html">Гарант сделок</a>
-            <a class="header-menu-item-button" href="personal_area.html">Личный кабинет</a>
+            <a class="header-menu-item-button" href="guarantee.php">Гарантии</a>
+            <a class="header-menu-item-button" href="payment.php">Оплата / FAQ</a>
+            <a class="header-menu-item-button" href="delivery.php">Доставка</a>
+            <a class="header-menu-item-button" href="faq.php">FAQ</a>
+            <a class="header-menu-item-button" href="supplier.php">Поставщикам</a>
+            <a class="header-menu-item-button" href="guarantor.php">Гарант сделок</a>
+            <a class="header-menu-item-button" href="personal_area.php">Личный кабинет</a>
         </div>
         <span class="sidenav-span" onclick="openNav()">&#9776; Меню</span>
         <div class="header-container cf">
@@ -74,42 +74,66 @@
         </div>
         <div class="header-menu-container">
             <ul class="header-menu-list">
-                <li class="header-menu-item"><a class="header-menu-item-button" href="guarantee.html">Гарантии</a></li>
-                <li class="header-menu-item"><a class="header-menu-item-button" href="payment.html">Оплата</a></li>
-                <li class="header-menu-item"><a class="header-menu-item-button" href="delivery.html">Доставка</a></li>
-                <li class="header-menu-item"><a class="header-menu-item-button" href="faq.html">FAQ</a></li>
-                <li class="header-menu-item"><a class="header-menu-item-button" href="supplier.html">Поставщикам</a></li>
-                <li class="header-menu-item"><a class="header-menu-item-button" href="guarantor.html">Гарант сделок</a></li>
+                <li class="header-menu-item"><a class="header-menu-item-button" href="guarantee.php">Гарантии</a></li>
+                <li class="header-menu-item"><a class="header-menu-item-button" href="payment.php">Оплата</a></li>
+                <li class="header-menu-item"><a class="header-menu-item-button" href="delivery.php">Доставка</a></li>
+                <li class="header-menu-item"><a class="header-menu-item-button" href="faq.php">FAQ</a></li>
+                <li class="header-menu-item"><a class="header-menu-item-button" href="supplier.php">Поставщикам</a></li>
+                <li class="header-menu-item"><a class="header-menu-item-button" href="guarantor.php">Гарант сделок</a></li>
             </ul>
         </div>
     </header>
     <main>
         <div class="main-table-row">
             <div class="main-left-block-container cf">
-                <h2>Доставка</h2>
-                <div class="delivery-container">
-                    <span class="delivery-about"><a href="//gateintogame.com">GateIntoGame</a> - сервис по продаже внутриигровых ценностей и оказанию различного вида услуг в онлайн играх жанра MMORPG. Мы предоставляем возможность купить валюту в онлайн игре (такую как золото, ISK), оплату (например PLEX в EVE Online или жетоны ArcheAge), заказать прокачку персонажей, выступить гарантом сделки и многое другое для приятного отдыха в любимой игре без забот.</span>
-                    <p class="payment-text">Способы доставки</p>
-                    <span class="delivery-about">В зависимости от игры - доставка может осуществляться по разному. Мы всегда используем самые безопасные методы доставки, которые существуют на данный момент. По предварительной договоренности мы можем доставить почти всеми удобными для клиента способами, но ниже представленые некоторые рекомендованные нами способы.</span>
-                    <span class="delivery-about">Рассмотрим пару примеров на основе популярных игр. EVE Online.</span>
-                    <ul class="delivery-list">
-                        <li class="delivery-list-item">Общий контракт. Клиенту будет необходимо выставить общедоступный контракт в системе Jita с некоторым количеством дешевых предметов, в замен которых он попросит оплаченную сумму внутриигровой валюты (ISK). <a href="https://gateintogame.com/contract.jpg">ПРИМЕР</a>
+                <h2>Вопросы и ответы</h2>
+                <div class="payment-container">
+                    <span class="payment-about"><a href="//gateintogame.com">GateIntoGame</a> - сервис по продаже внутриигровых ценностей и оказанию различного вида услуг в онлайн играх жанра MMORPG. Мы предоставляем возможность купить валюту в онлайн игре (такую как золото, ISK), оплату (например PLEX в EVE Online или жетоны ArcheAge), заказать прокачку персонажей, выступить гарантом сделки и многое другое для приятного отдыха в любимой игре без забот.</span>
+                    <p class="payment-text">FAQ</p>
+                    <ul class="payment-list-faq">
+                        <li class="payment-list-faq-question"><span class="payment-text">Вопрос:</span> Как мне получить скидку?</li>
+                        <span class="payment-text">Ответ:</span> При оплате Вам нужно ввести свой e-mail и на него автоматически начисляется
+                        накопительная скидка на покупки.
+                        <p></p>
+                        <li class="payment-list-faq-question"><span class="payment-text">Вопрос:</span> Какие у Вас гарантии?</li>
+                        <span class="payment-text">Ответ:</span> С полным списком гарантий Вы можете ознакомиться <a href="guarantee.php">тут</a>.
+                        <p></p>
+                        <li class="payment-list-faq-question"><span class="payment-text">Вопрос:</span> Каким способом я получу товар?</li>
+                        <span class="payment-text">Ответ:</span> Мы передаем товар самыми безопасными методами, которые доступны в данный
+                        момент. Более подробно это описано <a href="delivery.php">здесь</a>.
+                        <p></p>
+                        <li class="payment-list-faq-question"><span class="payment-text">Вопрос:</span> Через сколько после оплаты я получу
+                            свой товар?
                         </li>
-                        <li class="delivery-list-item">Личный контракт. Клиент создаёт такой же контракт, как указано выше, но на указанный оператором ник (по предварительной договоренности).
+                        <span class="payment-text">Ответ:</span> Если покупатель верно заполнил все данные при заказе и выполнил некоторые
+                        условия доставки - в 99% случаев мы выдадим заказ в течении 5-10 минут после оплаты. Максимальное время обработки
+                        заказа составляет 24 часа. Если оплаченый товар не пришёл Вам в течение часа - не волнуйтесь, в некоторых случаях
+                        требуется немного больше времени.
+                        <p></p>
+                        <li class="payment-list-faq-question"><span class="payment-text">Вопрос:</span> В онлайн чате не отвечают, что
+                            делать?
                         </li>
-                        <li class="delivery-list-item">Передача клиенту товара на станции Jita IV - Moon 4 - Caldari Navy Assembly Plant (Jita IV - Луна 4 - Сборочный цех Калдари Нави), упакованного в трюм корабля или контейнер. В большинстве используется для мелких, но дорогих товаров, например PLEX.
+                        <span class="payment-text">Ответ:</span> В этом случае рекомендуем Вам связаться любым другим способом, указанным в
+                        контактах.
+                        <p></p>
+                        <li class="payment-list-faq-question"><span class="payment-text">Вопрос:</span> Ошибка при оплате через WebMoney.
+                            Что делать?
                         </li>
-                        <li class="delivery-list-item">Передача клиенту товара на станции Jita IV - Moon 4 - Caldari Navy Assembly Plant или Hirtamon VII - Moon 5 - Zainou Biotech Production, который клиент сразу продает с целью получения купленной внутриигровой валюты - используется в некоторых, редких случаях.
-                        </li>
-                    </ul>
-                        <span class="delivery-about">Теперь возьмем в пример такие игры, как BLESS, World of Warcraft, ArcheAge.</span>
-                    <ul class="delivery-list">
-                        <li class="delivery-list-item">Доставка внутриигровой почтой. Товар высылается посредством внутриигровой почты, на тот ник, который был указан ПРИ ПОКУПКЕ. Клиенту будет необходимо лишь забрать покупку с почты.
-                        </li>
-                        <li class="delivery-list-item">Передача при личной встрече. Мы можем передать товар при личной встрече в оговорённом месте. Для этого перед покупкой уточните у оператора возможность осущестления данного способа в текущий момент и места проведения операции.
-                        </li>
-                        <li class="delivery-list-item">Доставка через аукцион. Клиент выставляет какие-то не нужные вещи за завышеную цену (сумму, которую он приобрёл) и мы выкупаем лот. Внимание! Комиссия за текущий метод за счет покупателя.
-                        </li>
+                        <span class="payment-text">Ответ:</span>Если Вы получили такое сообщение: "Ошибка. В соответствии с требованиями
+                        федерального законодательства,пожалуйста
+                        посетите сайт <a href="https://passport.webmoney.ru">https://passport.webmoney.ru</a> для заполнения персональной
+                        информации." - вот решение этой проблемы:
+                        <ol>
+                            <li class="payment-list-faq-webmoney">Перейдите на сайт <a href="https://passport.webmoney.ru">https://passport.webmoney.ru</a>.
+                            </li>
+                            <li class="payment-list-faq-webmoney">Авторизуйтесь на сайте (введите свой логин и пароль от веб мани) - для
+                                этого в правом верхнем углу нажмите кнопку "Вход".
+                            </li>
+                            <li class="payment-list-faq-webmoney">Получите аттестат( формальный или выше)- заполнив паспортные данные.</li>
+                            <li class="payment-list-faq-webmoney">Поздравляем, теперь Вы, можете совершать покупки посредством WebMoney на
+                                любом сайте и переводить деньги на любые кошельки.
+                            </li>
+                        </ol>
                     </ul>
                 </div>
             </div>
@@ -186,43 +210,43 @@
                         <div class="main-right-block-reviews-hidden">
                             <div class="reviews-table">
                                 <div class="reviews-table-header">
-                                    <div class="reviews-table-cell reviews-table-head">Имя</div>
+                                    <div class="reviews-table-cell reviews-table-head">Дата</div>
                                     <div class="reviews-table-cell reviews-table-head">Отзыв</div>
                                 </div>
                                 <div class="reviews-table-row-group">
-                                    <div class="reviews-table-row">
-                                        <div class="reviews-table-cell reviews-table-name">Дмитрий222222222222222222</div>
-                                        <div class="reviews-table-cell reviews-table-review">Отличный сайт, купил много
-                                            золота
-                                            без проблем1111111111111111111111111111111111 22222222222222
-                                        </div>
-                                    </div>
-                                    <div class="reviews-table-row">
-                                        <div class="reviews-table-cell reviews-table-name">Дмитрий</div>
-                                        <div class="reviews-table-cell reviews-table-review">Отличный сайт
-                                        </div>
-                                    </div>
-                                    <div class="reviews-table-row">
-                                        <div class="reviews-table-cell reviews-table-name">Дмитрий</div>
-                                        <div class="reviews-table-cell reviews-table-review">Отличный сайт, купил много
-                                            золота
-                                            без проблем222222222222222222333333333333333333333333
-                                        </div>
-                                    </div>
-                                    <div class="reviews-table-row">
-                                        <div class="reviews-table-cell reviews-table-name">Дмитрий</div>
-                                        <div class="reviews-table-cell reviews-table-review">Отличный сайт, купил много
-                                            золота
-                                            без проблем
-                                        </div>
-                                    </div>
-                                    <div class="reviews-table-row">
-                                        <div class="reviews-table-cell reviews-table-name">Дмитрий</div>
-                                        <div class="reviews-table-cell reviews-table-review">Отличный сайт, купил много
-                                            золота
-                                            без проблем
-                                        </div>
-                                    </div>
+                                    <?php
+                                    $url = 'https://shop.digiseller.ru/xml/shop_reviews.asp';
+                                    $xml = '
+                                    <digiseller.request>
+                                    <seller>
+                                        <id>43447</id>
+                                    </seller>
+                                    <product>
+                                        <id></id>
+                                    </product>
+                                    <reviews>
+                                        <type>all</type>
+                                    </reviews>
+                                    <pages>
+                                        <rows>15</rows>
+                                    </pages>
+                                    </digiseller.request>';
+
+                                    $ch = curl_init($url);
+
+                                    curl_setopt($ch, CURLOPT_POST, 1);
+                                    curl_setopt($ch, CURLOPT_POSTFIELDS, $xml);
+                                    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+                                    $response = curl_exec($ch);
+                                    curl_close($ch);
+
+                                    $doc = new DOMDocument();
+                                    $doc->loadXML($response);
+
+                                    $reviews = $doc->getElementsByTagName("reviews");
+                                    ?>
+                                    <?php  require ('auto/reviews.php')  ?>
                                 </div>
                             </div>
                         </div>
@@ -234,13 +258,13 @@
     <footer>
         <div class="footer-bottom-menu-list-container cf">
             <ul class="footer-bottom-menu-list">
-                <li class="footer-bottom-menu-list-item"><a href="guarantee.html">Гарантии</a></li>
-                <li class="footer-bottom-menu-list-item"><a href="payment.html">Оплата</a></li>
-                <li class="footer-bottom-menu-list-item"><a href="delivery.html">Доставка</a></li>
-                <li class="footer-bottom-menu-list-item"><a href="faq.html">FAQ</a></li>
-                <li class="footer-bottom-menu-list-item"><a href="supplier.html">Поставщикам</a></li>
-                <li class="footer-bottom-menu-list-item"><a href="guarantor.html">Гарант сделок</a></li>
-                <li class="footer-bottom-menu-list-item"><a href="personal_area.html">Личный кабинет</a></li>
+                <li class="footer-bottom-menu-list-item"><a href="guarantee.php">Гарантии</a></li>
+                <li class="footer-bottom-menu-list-item"><a href="payment.php">Оплата</a></li>
+                <li class="footer-bottom-menu-list-item"><a href="delivery.php">Доставка</a></li>
+                <li class="footer-bottom-menu-list-item"><a href="faq.php">FAQ</a></li>
+                <li class="footer-bottom-menu-list-item"><a href="supplier.php">Поставщикам</a></li>
+                <li class="footer-bottom-menu-list-item"><a href="guarantor.php">Гарант сделок</a></li>
+                <li class="footer-bottom-menu-list-item"><a href="personal_area.php">Личный кабинет</a></li>
             </ul>
         </div>
         <div class="footer-container">
