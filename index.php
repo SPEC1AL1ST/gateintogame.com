@@ -325,6 +325,9 @@
         </div>
     </footer>
 </div>
+<!--<script src="js/main.js"></script>-->
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/social-likes.min.js"></script>
 <!--Google Analytics-->
 <script>
     (function (i, s, o, g, r, a, m) {
@@ -343,9 +346,7 @@
     ga('send', 'pageview');
 
 </script>
-<!--<script src="js/main.js"></script>-->
-<script src="js/jquery-3.1.1.min.js"></script>
-<script src="js/social-likes.min.js"></script>
+<!-- End Google Analytics -->
 <!--Slider-->
 <script>
     function openNav() {
@@ -359,10 +360,11 @@
 <!--Главный виджет ВК-->
 <script type="text/javascript" src="//vk.com/js/api/openapi.js?136"></script>
 <script type="text/javascript">VK.Widgets.Group("vk_groups", {
-    mode: 3,
-    width: "220",
-    color1: 'FAF9F0'
-}, 133736952);</script>
+        mode: 3,
+        width: "220",
+        color1: 'FAF9F0'
+    }, 133736952);</script>
+<!-- End Главный виджет ВК -->
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
     (function (d, w, c) {
@@ -407,6 +409,7 @@
   ]
 }
 </script>
+<!-- End Социальные сети -->
 <!-- Begin Verbox -->
 <script type='text/javascript'>
     (function(d, w, m) {
