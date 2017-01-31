@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="initial-scale=1.0, width=device-width">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Ошибка 404. Несуществующая страница...">
     <meta name="Keywords" content="error, 404, page not found">
@@ -222,22 +222,22 @@
         <div class="footer-container">
             <p class="footer-copyright">
                 © Copyright 2006 -
-                <time datetime="YYYY">2017,</time>
+                <time datetime="2017">2017,</time>
                 All Rights Reserved
             </p>
             <div class="footer-buttons">
                 <!-- begin WebMoney Transfer : attestation label -->
                 <div class="footer-buttons-item">
                     <a href="https://passport.webmoney.ru/asp/certview.asp?wmid=206131806689" target=_blank><img
-                            src="/img/88x31_wm_blue_on_white_ru.png"
-                            title="Здесь находится аттестат нашего WM идентификатора 206131806689" border="0"><br><span
+                                src="/img/88x31_wm_blue_on_white_ru.png" alt="WebMoney"
+                            title="Здесь находится аттестат нашего WM идентификатора 206131806689"><br><span
                             class="footer-emoney-title">Проверить аттестат</span></a>
                     <!-- end WebMoney Transfer : attestation label -->
                 </div>
                 <div class="footer-buttons-item">
                     <a href="https://money.yandex.ru/to/410012277396683" target=_blank><img
                             src="/img/88x31_yandex_money_on_white_ru.png"
-                            title="Здесь находится кошелёк Яндекс.Денег" border="0"><br><span
+                            title="Здесь находится кошелёк Яндекс.Денег"><br><span
                             class="footer-emoney-title">Проверить кошелёк</span></a>
                 </div>
             </div>

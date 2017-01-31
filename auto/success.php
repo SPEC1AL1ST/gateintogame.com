@@ -2,8 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Сервис по продаже внутриигровых ценностей и валют, а также оказанию различного вида услуг в онлайн играх жанра MMORPG.">
     <meta name="Keywords" content="online, mmorpg, bless, wow, eve online, aion, swtor, tera l2, lineage, gold, золото, кинары, серебро, голд, иски, isk, купить иски, купить голд, купить золото, продать голд, продать голд блесс, продать иски, продать isk, продать голд вов, купить голд блесс, купить голд вов, купить иски ив онлайн, купить isk, внутриигровая валюта, онлайн игры, прокачка, гарант, сделка, гейтинтогейм">
@@ -305,22 +304,22 @@
         <div class="footer-container">
             <p class="footer-copyright">
                 © Copyright 2006 -
-                <time datetime="YYYY">2017,</time>
+                <time datetime="2017">2017,</time>
                 All Rights Reserved
             </p>
             <div class="footer-buttons">
                 <!-- begin WebMoney Transfer : attestation label -->
                 <div class="footer-buttons-item">
                     <a href="https://passport.webmoney.ru/asp/certview.asp?wmid=206131806689" target=_blank><img
-                                src="../img/88x31_wm_blue_on_white_ru.png"
-                                title="Здесь находится аттестат нашего WM идентификатора 206131806689" border="0"><br><span
+                                src="../img/88x31_wm_blue_on_white_ru.png" alt="WebMoney"
+                                title="Здесь находится аттестат нашего WM идентификатора 206131806689"><br><span
                                 class="footer-emoney-title">Проверить аттестат</span></a>
                     <!-- end WebMoney Transfer : attestation label -->
                 </div>
                 <div class="footer-buttons-item">
                     <a href="https://money.yandex.ru/to/410012277396683" target=_blank><img
                                 src="../img/88x31_yandex_money_on_white_ru.png"
-                                title="Здесь находится кошелёк Яндекс.Денег" border="0"><br><span
+                                title="Здесь находится кошелёк Яндекс.Денег"><br><span
                                 class="footer-emoney-title">Проверить кошелёк</span></a>
                 </div>
             </div>

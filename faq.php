@@ -2,11 +2,12 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Сервис по продаже внутриигровых ценностей и валют, а также оказанию различного вида услуг в онлайн играх жанра MMORPG.">
-    <meta name="Keywords" content="online, mmorpg, bless, wow, eve, aion, swtor, tera l2, lineage, gold, золото, кинары, серебро, голд, иски, isk, купить иски, купить голд, купить золото, продать голд, продать голд блесс, продать иски, продать isk, продать голд вов, купить голд блесс, купить голд вов, купить иски ив онлайн, купить isk, внутриигровая валюта, онлайн игры, прокачка, гарант, сделка, гейтинтогейм">
+    <meta name="description"
+          content="Сервис по продаже внутриигровых ценностей и валют, а также оказанию различного вида услуг в онлайн играх жанра MMORPG.">
+    <meta name="Keywords"
+          content="online, mmorpg, bless, wow, eve, aion, swtor, tera l2, lineage, gold, золото, кинары, серебро, голд, иски, isk, купить иски, купить голд, купить золото, продать голд, продать голд блесс, продать иски, продать isk, продать голд вов, купить голд блесс, купить голд вов, купить иски ив онлайн, купить isk, внутриигровая валюта, онлайн игры, прокачка, гарант, сделка, гейтинтогейм">
     <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/social-likes_birman.css" rel="stylesheet">
@@ -38,7 +39,7 @@
                                                              alt="Вконтакте"
                                                              title="Вконтакте"></a>
                             <a href="#" target="_blank"><img
-                                    src="img/facebook_logo.png" alt="Фейсбук" title="Фейсбук"></a>
+                                        src="img/facebook_logo.png" alt="Фейсбук" title="Фейсбук"></a>
                             <a href="#" target="_blank"><img src="img/gplus_logo.png" alt="Google+"
                                                              title="Google+"></a>
                             <a href="#" target="_blank"><img src="img/twitter_logo.png"
@@ -151,7 +152,7 @@
                             </div>
                             <div class="main-right-block-contacts-information-item">
                                 <img src="img/discord.png" alt="Discord" title="Discord"><a
-                                    href="https://discord.gg/jXtcUrW" title="Discord">GateIntoGame</a>
+                                        href="https://discord.gg/jXtcUrW" title="Discord">GateIntoGame</a>
                             </div>
                             <div class="main-right-block-contacts-information-item">
                                 <img src="img/viber.png" alt="Viber" title="Viber"><a href="https://viber.com/gateintogame"
@@ -159,7 +160,7 @@
                             </div>
                             <div class="main-right-block-contacts-information-item">
                                 <img src="img/whatsapp.png" alt="WhatsApp" title="WhatsApp"><a
-                                    href="whatsapp://chat?number=380954460599" title="WhatsApp">+380954460599</a>
+                                        href="whatsapp://chat?number=380954460599" title="WhatsApp">+380954460599</a>
                             </div>
                             <div class="main-right-block-contacts-information-item">
                                 <img src="img/email.png" alt="E-Mail" title="E-Mail"><a href="mailto:admin@gateintogame.com"
@@ -174,15 +175,16 @@
                                                                                            alt="Страница Вконтакте"
                                                                                            title="Страница Вконтакте"></a>
                                 <a href="https://www.facebook.com/gateintogame" target="_blank"><img
-                                        src="img/facebook_logo.png" alt="Страница в Фейсбук" title="Страница в Фейсбук"></a>
-                                <a href="https://plus.google.com/+Gateintogame" target="_blank"><img src="img/gplus_logo.png" alt="Страница в Google+"
-                                                                                                                 title="Страница в Google+"></a>
+                                            src="img/facebook_logo.png" alt="Страница в Фейсбук" title="Страница в Фейсбук"></a>
+                                <a href="https://plus.google.com/+Gateintogame" target="_blank"><img src="img/gplus_logo.png"
+                                                                                                     alt="Страница в Google+"
+                                                                                                     title="Страница в Google+"></a>
                                 <a href="https://ok.ru/group/58211336454193" target="_blank"><img src="img/classmates_logo.png"
-                                                                 alt="Страница в Одноклассниках"
-                                                                 title="Страница в Одноклассниках"></a>
+                                                                                                  alt="Страница в Одноклассниках"
+                                                                                                  title="Страница в Одноклассниках"></a>
                                 <a href="https://twitter.com/GateIntoGame" target="_blank"><img src="img/twitter_logo.png"
-                                                                 alt="Твиттер"
-                                                                 title="Твиттер"></a>
+                                                                                                alt="Твиттер"
+                                                                                                title="Твиттер"></a>
                             </div>
                             <h3 class="main-right-block-contacts-social-sharing">Поделиться</h3>
                             <div class="facebook" title="Поделиться ссылкой на Фейсбуке">Facebook</div>
@@ -246,7 +248,7 @@
 
                                     $reviews = $doc->getElementsByTagName("reviews");
                                     ?>
-                                    <?php  require ('auto/reviews.php')  ?>
+                                    <?php require('auto/reviews.php') ?>
                                 </div>
                             </div>
                         </div>
@@ -270,23 +272,23 @@
         <div class="footer-container">
             <p class="footer-copyright">
                 © Copyright 2006 -
-                <time datetime="YYYY">2017,</time>
+                <time datetime="2017">2017,</time>
                 All Rights Reserved
             </p>
             <div class="footer-buttons">
                 <!-- begin WebMoney Transfer : attestation label -->
                 <div class="footer-buttons-item">
                     <a href="https://passport.webmoney.ru/asp/certview.asp?wmid=206131806689" target=_blank><img
-                            src="img/88x31_wm_blue_on_white_ru.png"
-                            title="Здесь находится аттестат нашего WM идентификатора 206131806689" border="0"><br><span
-                            class="footer-emoney-title">Проверить аттестат</span></a>
+                                src="img/88x31_wm_blue_on_white_ru.png" alt="WebMoney" alt="WebMoney"
+                                title="Здесь находится аттестат нашего WM идентификатора 206131806689"><br><span
+                                class="footer-emoney-title">Проверить аттестат</span></a>
                     <!-- end WebMoney Transfer : attestation label -->
                 </div>
                 <div class="footer-buttons-item">
                     <a href="https://money.yandex.ru/to/410012277396683" target=_blank><img
-                            src="img/88x31_yandex_money_on_white_ru.png"
-                            title="Здесь находится кошелёк Яндекс.Денег" border="0"><br><span
-                            class="footer-emoney-title">Проверить кошелёк</span></a>
+                                src="img/88x31_yandex_money_on_white_ru.png"
+                                title="Здесь находится кошелёк Яндекс.Денег"><br><span
+                                class="footer-emoney-title">Проверить кошелёк</span></a>
                 </div>
             </div>
             <p class="footer-tagline">
@@ -338,31 +340,38 @@
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
     (function (d, w, c) {
-        (w[c] = w[c] || []).push(function() {
+        (w[c] = w[c] || []).push(function () {
             try {
                 w.yaCounter42431204 = new Ya.Metrika({
-                    id:42431204,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true,
-                    webvisor:true
+                    id: 42431204,
+                    clickmap: true,
+                    trackLinks: true,
+                    accurateTrackBounce: true,
+                    webvisor: true
                 });
-            } catch(e) { }
+            } catch (e) {
+            }
         });
 
         var n = d.getElementsByTagName("script")[0],
             s = d.createElement("script"),
-            f = function () { n.parentNode.insertBefore(s, n); };
+            f = function () {
+                n.parentNode.insertBefore(s, n);
+            };
         s.type = "text/javascript";
         s.async = true;
         s.src = "https://mc.yandex.ru/metrika/watch.js";
 
         if (w.opera == "[object Opera]") {
             d.addEventListener("DOMContentLoaded", f, false);
-        } else { f(); }
+        } else {
+            f();
+        }
     })(document, window, "yandex_metrika_callbacks");
 </script>
-<noscript><div><img src="https://mc.yandex.ru/watch/42431204" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<noscript>
+    <div><img src="https://mc.yandex.ru/watch/42431204" style="position:absolute; left:-9999px;" alt=""/></div>
+</noscript>
 <!-- /Yandex.Metrika counter -->
 <!--Социальные сети-->
 <script type="application/ld+json">
@@ -378,19 +387,26 @@
     "https://plus.google.com/+Gateintogame"
   ]
 }
+
+
+
 </script>
 <!-- End Социальные сети -->
 <!-- Begin Verbox -->
 <script type='text/javascript'>
-    (function(d, w, m) {
+    (function (d, w, m) {
         window.supportAPIMethod = m;
         var s = d.createElement('script');
-        s.type ='text/javascript'; s.id = 'supportScript'; s.charset = 'utf-8';
+        s.type = 'text/javascript';
+        s.id = 'supportScript';
+        s.charset = 'utf-8';
         s.async = true;
         var id = '37db501e774219d27c78293970c13368';
-        s.src = '//admin.verbox.ru/support/support.js?h='+id;
+        s.src = '//admin.verbox.ru/support/support.js?h=' + id;
         var sc = d.getElementsByTagName('script')[0];
-        w[m] = w[m] || function() { (w[m].q = w[m].q || []).push(arguments); };
+        w[m] = w[m] || function () {
+                (w[m].q = w[m].q || []).push(arguments);
+            };
         if (sc) sc.parentNode.insertBefore(s, sc);
         else d.documentElement.firstChild.appendChild(s);
     })(document, window, 'Verbox');
