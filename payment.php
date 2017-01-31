@@ -145,8 +145,8 @@
                                     href="https://discord.gg/jXtcUrW" title="Discord">GateIntoGame</a>
                             </div>
                             <div class="main-right-block-contacts-information-item">
-                                <img src="img/viber.png" alt="Viber" title="Viber"><a href="viber://add?number=380954460599"
-                                                                                      title="Viber">+380954460599</a>
+                                <img src="img/viber.png" alt="Viber" title="Viber"><a href="https://viber.com/gateintogame"
+                                                                                      title="Viber">GateIntoGame</a>
                             </div>
                             <div class="main-right-block-contacts-information-item">
                                 <img src="img/whatsapp.png" alt="WhatsApp" title="WhatsApp"><a

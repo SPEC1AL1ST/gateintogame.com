@@ -876,13 +876,14 @@ h2 {
 }
 
 .reviews-table-name {
-    max-width: 110px;
+    max-width: 105px;
+    padding: 2px 0;
     vertical-align: middle;
 }
 
 .reviews-table-review {
-    padding-left: 5px;
-    max-width: 225px;
+    vertical-align: middle;
+    max-width: 230px;
 }
 
 .please-leave-review {

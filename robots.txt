@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /auto/
+Sitemap: https://gateintogame.com/sitemap.xml
+Host: https://gateintogame.com
