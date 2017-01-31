@@ -333,16 +333,65 @@
     width: "220",
     color1: 'FAF9F0'
 }, 133736952);</script>
-<!--Битрикс24-->
-<script data-skip-moving="true">
-    (function (w, d, u, b) {
-        s = d.createElement('script');
-        r = 1 * new Date();
-        s.async = 1;
-        s.src = u + '?' + r;
-        h = d.getElementsByTagName('script')[0];
-        h.parentNode.insertBefore(s, h);
-    })(window, document, 'https://cdn.bitrix24.ua/b3180093/crm/site_button/loader_2_ppddr3.js');
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter42431204 = new Ya.Metrika({
+                    id:42431204,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
 </script>
+<noscript><div><img src="https://mc.yandex.ru/watch/42431204" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!--Социальные сети-->
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Organization",
+  "name" : "Gate Into Game",
+  "url" : "https://gateintogame.com",
+  "sameAs" : [
+    "https://vk.com/gateintogame",
+    "https://www.facebook.com/gateintogame",
+    "https://twitter.com/GateIntoGame",
+    "https://plus.google.com/+Gateintogame"
+  ]
+}
+</script>
+<!-- Begin Verbox -->
+<script type='text/javascript'>
+    (function(d, w, m) {
+        window.supportAPIMethod = m;
+        var s = d.createElement('script');
+        s.type ='text/javascript'; s.id = 'supportScript'; s.charset = 'utf-8';
+        s.async = true;
+        var id = '37db501e774219d27c78293970c13368';
+        s.src = '//admin.verbox.ru/support/support.js?h='+id;
+        var sc = d.getElementsByTagName('script')[0];
+        w[m] = w[m] || function() { (w[m].q = w[m].q || []).push(arguments); };
+        if (sc) sc.parentNode.insertBefore(s, sc);
+        else d.documentElement.firstChild.appendChild(s);
+    })(document, window, 'Verbox');
+</script>
+<!-- End Verbox -->
 </body>
 </html>
