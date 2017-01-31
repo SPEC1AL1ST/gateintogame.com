@@ -185,7 +185,7 @@
                             </div>
                             <div class="main-right-block-contacts-information-item">
                                 <img src="img/viber.png" alt="Viber" title="Viber"><a href="https://viber.com/gateintogame"
-                                                                                      title="Viber">GateIntoGame</a>
+                                                                                      title="Viber" target="_blank">GateIntoGame</a>
                             </div>
                             <div class="main-right-block-contacts-information-item">
                                 <img src="img/whatsapp.png" alt="WhatsApp" title="WhatsApp"><a
