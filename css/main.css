@@ -431,7 +431,7 @@ main {
     border-radius: 10px;
     cursor: pointer;
     display: inline-block;
-    height: 210px;
+    height: 225px;
     margin: 0 5px 10px;
     padding: 10px;
     text-align: center;
@@ -445,7 +445,7 @@ main {
     left: 50px;
     bottom: 0;
     right: 0;
-    top: 95px;
+    top: 100px;
     background: rgba(50, 255, 63, 0.8);
     padding: 5px;
     width: 100px;
@@ -479,9 +479,10 @@ main {
     max-width: 190px;
 }
 
-.game-category-item-description {
-    font: 700 italic 21px 'Lobster', serif;
+.game-category-item-description,
+.game-category-item-price {
     color: #616161;
+    font-weight: bold;
     padding: 0;
     margin: 0;
 }
@@ -668,8 +669,8 @@ h1 {
 }
 
 h2 {
-    font: 600 italic 26px 'Lobster', sans-serif;
-    margin: 15px auto;
+    font: 600 26px 'Garamond', serif;
+    margin: 15px auto 10px;
     text-align: center;
 }
 
@@ -841,14 +842,14 @@ h2 {
     -moz-border-radius: 10px;
     border-radius: 10px;
     margin: 0 auto;
-    height: 240px;
+    height: 260px;
     max-width: 375px;
 }
 
 .main-right-block-reviews-hidden {
     margin: 5px;
     overflow: auto;
-    height: 230px;
+    height: 250px;
     max-width: 365px;
 }
 
@@ -1124,7 +1125,6 @@ footer {
     .sidenav-span {
         position: absolute;
         display: block;
-        left: 20px;
         top: 30px;
     }
 
@@ -1286,7 +1286,6 @@ footer {
 
     .sidenav,
     .sidenav-span {
-        left: 10px;
         top: -5px;
     }
 
@@ -1366,6 +1365,7 @@ footer {
 
     .main-right-block-reviews-hidden {
         width: 330px;
+        height: 230px;
     }
 
     .reviews-table-review {
