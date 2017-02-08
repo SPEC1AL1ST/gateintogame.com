@@ -623,7 +623,20 @@ main {
 
 h1 {
     color: #ff8a07;
-    font: 600 italic 15px 'Times New Roman', serif;
+    font: 600 italic 22px 'Times New Roman', serif;
+    margin: 5px;
+}
+
+.main-left-block-about-our-shop-header {
+    color: #000000;
+    font: 600 normal 17px 'Times New Roman', serif;
+    text-align: left;
+    padding: 0 10px;
+}
+
+.main-left-block-about-our-shop-header span {
+    color: #000000;
+    font: 400 normal 16px 'Times New Roman', serif;
 }
 
 .main-left-block-about-our-shop-text {
@@ -642,7 +655,7 @@ h1 {
 
 .main-left-block-about-our-shop-warning {
     font: 400 normal 12px 'Times New Roman', serif;
-    padding: 0 5px;
+    padding: 0 10px;
     text-align: justify;
 }
 

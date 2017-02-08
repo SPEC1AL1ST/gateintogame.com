@@ -89,7 +89,7 @@
             <div class="main-left-block-container cf">
                 <h2>Вопросы и ответы</h2>
                 <div class="payment-container">
-                    <span class="payment-about"><a href="//gateintogame.com">GateIntoGame</a> - сервис по продаже внутриигровых ценностей и оказанию различного вида услуг в онлайн играх жанра MMORPG. Мы предоставляем возможность купить валюту в онлайн игре (такую как золото, ISK), оплату (например PLEX в EVE Online или жетоны ArcheAge), заказать прокачку персонажей, выступить гарантом сделки и многое другое для приятного отдыха в любимой игре без забот.</span>
+<!--                    <span class="payment-about"><a href="//gateintogame.com">GateIntoGame</a> - сервис по продаже внутриигровых ценностей и оказанию различного вида услуг в онлайн играх жанра MMORPG. Мы предоставляем возможность купить валюту в онлайн игре (такую как золото, ISK), оплату (например PLEX в EVE Online или жетоны ArcheAge), заказать прокачку персонажей, услугу гаранта сделки и многое другое для приятного отдыха в любимой игре без забот.</span>-->
                     <p class="payment-text">FAQ</p>
                     <ul class="payment-list-faq">
                         <li class="payment-list-faq-question"><span class="payment-text">Вопрос:</span> Как мне получить скидку?</li>
